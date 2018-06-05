@@ -1,0 +1,26 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "Omega Mapping",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/main.comp.css",
+    "concat:css": "concat -o css/main.concat.css css/icon-font.css css/main.comp.css",
+    "compress:css": "node-sass css/main.css css/style.css --output-style compressed",
+    "compress:media-css": "node-sass css/media-query.css css/media-query.min.css --output-style compressed",
+    "build:css": "npm-run-all  compress:css compress:media-css"
+  },
+  "author": "Website Genii",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {}
+}
