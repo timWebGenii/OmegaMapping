@@ -1,0 +1,64 @@
+.navigation{
+    padding: 3rem;
+    &__checkbox{
+        display: none
+    }
+    &__nav{
+        display: flex;
+
+        @include respond (tab) {
+            align-items: center;
+         }
+    }
+    &__logo-box{
+
+        @include respond (tab){
+
+            width: 25rem;
+        }
+    }
+    &__right{
+        margin-left: auto;
+    }
+    
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &__item{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        
+       
+    }
+    &__link{
+        &:link,
+        &:visited{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: $default-color;
+        }
+
+        @include respond (tab) {
+            display: none;
+        }
+    }
+
+    &__menu{
+        &--button{
+            background-color: transparent;
+            border: none;
+        }
+
+        &--icon{
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+   
+
+}

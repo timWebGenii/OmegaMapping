@@ -1,0 +1,68 @@
+.sidebar{
+    position: relative;
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond (phone) {
+        width: 50vw;
+    }
+
+    @include respond (sm-phone) {
+        width: 100vw;
+    }
+
+        
+    &__close{
+        background-color: transparent;
+        border:none;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary;
+    }
+
+    &__nav {
+       margin-top: 1rem;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+      }
+    }
+    &__link {
+            
+        &:link,
+        &:visited,
+         {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            color: $default-color;
+            z-index: 10;
+            height: 4rem;
+            margin-right: 2rem;
+
+
+            
+        }
+
+        
+
+    }
+    
+}

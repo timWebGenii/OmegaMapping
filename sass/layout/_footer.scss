@@ -1,0 +1,123 @@
+.footer{
+    background-color: $color-white;
+    &--top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem;
+
+        @include respond (tab) {
+            padding: 3rem;
+        }
+     
+        
+    }
+    &--copy{
+        background-color: $color-primary;
+        color: $color-white;
+        padding:2rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond (phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
+
+    &__logo-box{
+        width: 25rem;
+
+        @include respond (tab) {
+            text-align: center;
+            flex: 0 1 100%;
+            margin-bottom: 3rem;
+        }
+        @include respond (phone-switch) {
+           order: 1;
+         }
+    }
+    &__top-page-btn{
+        @include respond (tab) {
+            display: none;
+        }
+        
+    }
+    &__nav{
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond (tab) {
+            flex: 0 1 100%;
+            justify-content: space-around;
+        }
+
+        @include respond (phone-switch) {
+            flex-flow: column;
+            padding: 3rem;
+        }
+    }
+    &__list{
+        list-style: none;
+        @include respond (phone-switch) {
+           margin-bottom: 1rem;
+           
+        }
+        }
+
+    
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: $default-font-size;
+            font-weight: bold;
+            color: $default-color;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__icon{
+        height:3rem;
+     width: 3rem;
+     fill: $color-primary;
+    }
+
+    &__copy-box{
+        & .paragraph{
+            text-align: left;
+            @include respond (phone){
+                text-align: center;
+            }
+        }
+        @include respond (phone) {
+            flex: 0 1 100%;
+            
+        }
+    }
+}
+
+
+
+.social-icon{
+
+    &__links{
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+    
+}

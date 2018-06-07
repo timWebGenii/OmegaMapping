@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <style amp-custom>
+            *,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}html{font-size:62.5%}@media only screen and (max-width: 75em){html{font-size:56.25%}}@media only screen and (max-width: 56.25em){html{font-size:50%}}@media (min-width: 112.5em){html{font-size:75%}}body{-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#F1F1F1}::-moz-selection{background-color:#BA0C2F;color:#fff}::selection{background-color:#BA0C2F;color:#fff}body{font-family:"Lato", sans-serif;font-weight:400;line-height:1.7;color:#0D0C0C}.heading-primary--main{font-size:5rem;font-weight:bold}@media only screen and (max-width: 37.5em){.heading-primary--main{font-size:3.5rem}}.heading-primary--sub{font-size:4rem;font-weight:400;text-transform:capitalize}@media only screen and (max-width: 37.5em){.heading-primary--sub{font-size:2.5rem}}.heading-secondary{font-size:4.5rem;font-weight:400;text-transform:uppercase;margin-bottom:1rem}@media only screen and (max-width: 43.75em){.heading-secondary{font-size:3.5rem}}.paragraph{font-size:1.6rem;text-align:justify}.paragraph:not(:last-child){margin-bottom:2rem}.paragraph--white{color:#fff}.btn,.btn:link,.btn:visited{text-transform:uppercase;text-decoration:none;display:inline-block;position:relative;font-size:2rem;font-weight:bold;border:none;cursor:pointer;color:#fff;padding:1rem 2rem;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s;-webkit-border-radius:1px;border-radius:1px}@media only screen and (max-width: 20em){.btn,.btn:link,.btn:visited{font-size:1.6rem}}@media only screen and (max-height: 40em){.btn,.btn:link,.btn:visited{font-size:1.6rem}}.btn:hover{-webkit-transform:translateY(-0.3rem);-ms-transform:translateY(-0.3rem);transform:translateY(-0.3rem);-webkit-box-shadow:0 1rem 2rem rgba(0,0,0,0.2);box-shadow:0 1rem 2rem rgba(0,0,0,0.2)}.btn:hover::after{-webkit-transform:scaleX(1.4) scaleY(1.6);-ms-transform:scaleX(1.4) scaleY(1.6);transform:scaleX(1.4) scaleY(1.6);opacity:0}.btn:active,.btn:focus{outline:none;-webkit-transform:translateY(-0.1rem);-ms-transform:translateY(-0.1rem);transform:translateY(-0.1rem);-webkit-box-shadow:0 0.5rem 1rem rgba(0,0,0,0.2);box-shadow:0 0.5rem 1rem rgba(0,0,0,0.2)}.btn--primary{background-color:#BA0C2F;display:inline-block}.cemeteries__container--right{-webkit-box-flex:0;-webkit-flex:0 1 40%;-ms-flex:0 1 40%;flex:0 1 40%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}@media only screen and (max-width: 37.5em){.cemeteries__container--right{width:100%}}.cemeteries__container--right .btn{margin-top:5rem;-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end}@media only screen and (max-width: 37.5em){.cemeteries__container--right .btn{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}}.cemeteries__figure{-webkit-box-flex:0;-webkit-flex:0 1 40%;-ms-flex:0 1 40%;flex:0 1 40%}@media only screen and (max-width: 37.5em){.cemeteries__figure{width:100%;margin-bottom:5rem}}.cemeteries__img{-webkit-box-shadow:0 3px 6px #000;box-shadow:0 3px 6px #000}.cemeteries__caption{text-align:center;font-size:2rem;margin-top:1rem;text-transform:uppercase;font-weight:bold}.franchise-opp__container--left{-webkit-box-flex:0;-webkit-flex:0 1 45%;-ms-flex:0 1 45%;flex:0 1 45%}.franchise-opp__container--left>*:not(:last-child){margin-bottom:1rem}.franchise-opp__container--left .btn{margin-top:5rem}@media only screen and (max-width: 37.5em){.franchise-opp__container--left .btn{display:none}}.franchise-opp__container--right{margin:0 auto}@media only screen and (max-width: 37.5em){.franchise-opp__container--right{margin-top:5rem}}.franchise-opp__container--right>.paragraph{font-weight:bold;margin-bottom:1rem}.franchise-opp__container--right .btn{display:none}@media only screen and (max-width: 37.5em){.franchise-opp__container--right .btn{display:inline-block;margin-top:5rem}}.franchise-opp__list{list-style:none}.franchise-opp__item{font-size:1.3rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.franchise-opp__item--fine{font-size:1rem;margin-top:1rem}.franchise-opp__icon{height:1rem;width:1rem;padding:0}.ground-figure{text-align:center;-webkit-box-flex:0;-webkit-flex:0 1 20%;-ms-flex:0 1 20%;flex:0 1 20%;margin-right:2rem}@media only screen and (max-width: 33.125em){.ground-figure{margin-right:0}}.ground-figure__container{-webkit-box-flex:0;-webkit-flex:0 1 70%;-ms-flex:0 1 70%;flex:0 1 70%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}@media only screen and (max-width: 43.75em){.ground-figure__container{-webkit-box-flex:0;-webkit-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%;-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}}@media only screen and (max-width: 33.125em){.ground-figure__container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}@media only screen and (max-width: 56.25em){.ground-figure{-webkit-box-flex:0;-webkit-flex:0 1 35%;-ms-flex:0 1 35%;flex:0 1 35%;margin-bottom:4rem}}.ground-figure__img{-webkit-box-shadow:0 3px 6px #000;box-shadow:0 3px 6px #000}.ground-figure__caption{font-size:1.6rem;font-weight:bold}.municipalities__container--left{-webkit-box-flex:0;-webkit-flex:0 1 40%;-ms-flex:0 1 40%;flex:0 1 40%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}.municipalities__container--left .heading-secondary{text-align:left}.municipalities__container--left .btn{margin-top:5rem;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start}@media only screen and (max-width: 37.5em){.municipalities__container--left .btn{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}}.municipalities__img-box{-webkit-box-flex:0;-webkit-flex:0 1 40%;-ms-flex:0 1 40%;flex:0 1 40%}@media only screen and (max-width: 37.5em){.municipalities__img-box{width:100%;margin-top:5rem}}.section-border{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.section-border__line{border-bottom:1px solid #707070;-webkit-box-flex:50%;-webkit-flex:50%;-ms-flex:50%;flex:50%;margin:10rem 0}@media only screen and (max-width: 43.75em){.section-border__line{margin:5rem 0}}@media only screen and (max-width: 20em){.section-border__line{margin:10rem 0}}.section-border__icon{padding:0rem 5rem}.section-border--vert{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}@media only screen and (max-width: 56.25em){.section-border--vert{padding-top:4rem}}@media only screen and (max-width: 43.75em){.section-border--vert{padding-top:2rem}}@media only screen and (max-width: 37.5em){.section-border--vert{display:none}}.section-border--vert__line{border-right:1px solid #707070;height:55rem}@media only screen and (max-width: 56.25em){.section-border--vert__line{height:45rem}}@media only screen and (max-width: 43.75em){.section-border--vert__line{height:40rem}}.section-border--vert__icon{padding:5rem 0}.section-cta{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:5rem 15rem 15rem 15rem;background-color:#fff;-webkit-box-shadow:0 20px 40px rgba(38,153,251,0.2);box-shadow:0 20px 40px rgba(38,153,251,0.2);padding:5rem}@media only screen and (max-width: 56.25em){.section-cta{margin:5rem}}@media only screen and (max-width: 43.75em){.section-cta{margin:5rem;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}@media only screen and (max-width: 28.125em){.section-cta{margin:1rem;margin-bottom:8rem}}.cta__container--text{-webkit-box-flex:0;-webkit-flex:0 1 45%;-ms-flex:0 1 45%;flex:0 1 45%}@media only screen and (max-width: 43.75em){.cta__container--text{margin-bottom:5rem}}.cta__container--text>*:not(:last-child){margin-bottom:1rem}.cta__container--form{-webkit-box-flex:0;-webkit-flex:0 1 50%;-ms-flex:0 1 50%;flex:0 1 50%}.contact__list{margin-top:3rem;list-style:none}@media only screen and (max-width: 43.75em){.contact__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}}@media only screen and (max-width: 28.125em){.contact__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}.contact__item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.contact__item:not(:last-child){margin-bottom:1rem}.contact__link:link,.contact__link:visited{text-decoration:none;color:#0D0C0C}.contact__icon{height:3rem;width:3rem;fill:#BA0C2F;margin-right:5px}.form{margin-top:1rem}.form__group{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.form__group:not(:last-child){margin-bottom:2rem}@media only screen and (max-width: 43.75em){.form__group{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}@media only screen and (max-width: 43.75em){.form__group .btn{-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;font-size:3rem;padding:3rem}}.form__label{background-color:#000;color:#fff;width:10rem;height:50px;padding:17px 0 0 1rem;text-transform:uppercase;font-weight:bold}@media only screen and (max-width: 43.75em){.form__label{text-align:center;padding-left:0}}.form__input,.form__input--comments{width:100%;font-family:inherit;padding:1rem 2rem;display:block;border:1px solid #000}@media only screen and (max-width: 43.75em){.form__input,.form__input--comments{height:50px}}.form__input::-webkit-input-placeholder,.form__input--comments::-webkit-input-placeholder{color:rgba(186,12,47,0.34)}.form__input:focus,.form__input--comments:focus{outline:none;-webkit-box-shadow:0 1rem 2rem rgba(186,12,47,0.1);box-shadow:0 1rem 2rem rgba(186,12,47,0.1);border:2px solid #BA0C2F}@media only screen and (max-width: 43.75em){.form__input--comments{height:150px}}.form__input:focus .form__label{background-color:#BA0C2F}.form__label--checkbox{display:block;position:relative;padding-left:35px;margin-bottom:12px;cursor:pointer;font-size:2rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.form__checkbox{position:absolute;opacity:0;cursor:pointer}.form .checkmark{position:absolute;top:3px;left:0;height:25px;width:25px;background-color:#707070;-webkit-transition:all .2s;-o-transition:all .2s;transition:all .2s}.form__label--checkbox:hover input ~ .checkmark{background-color:#fff;border:1px solid #BA0C2F}.form__label--checkbox input:checked ~ .checkmark{background-color:#BA0C2F}.form .checkmark:after{content:"";position:absolute;display:none;color:#BA0C2F}.form__label--checkbox input:checked ~ .checkmark:after{display:block}.form__label--checkbox .checkmark:after{left:9px;top:5px;width:5px;height:10px;border:solid white;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.form.amp-form-submit-success [submit-success],.form.amp-form-submit-error [submit-error]{margin-top:1.6rem}.form.amp-form-submit-success [submit-success]{color:green}.form.amp-form-submit-error [submit-error]{color:red}.form.amp-form-submit-success.hide-inputs>button{display:none}.footer{background-color:#fff}.footer--top{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:5rem}@media only screen and (max-width: 43.75em){.footer--top{padding:3rem}}.footer--copy{background-color:#BA0C2F;color:#fff;padding:2rem 5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (max-width: 26.125em){.footer--copy{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}.footer__logo-box{width:25rem}@media only screen and (max-width: 43.75em){.footer__logo-box{text-align:center;-webkit-box-flex:0;-webkit-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%;margin-bottom:3rem}}@media only screen and (max-width: 33.125em){.footer__logo-box{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}}@media only screen and (max-width: 43.75em){.footer__top-page-btn{display:none}}.footer__nav{-webkit-box-flex:0;-webkit-flex:0 1 50%;-ms-flex:0 1 50%;flex:0 1 50%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}@media only screen and (max-width: 43.75em){.footer__nav{-webkit-box-flex:0;-webkit-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}}@media only screen and (max-width: 33.125em){.footer__nav{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;padding:3rem}}.footer__list{list-style:none}@media only screen and (max-width: 33.125em){.footer__list{margin-bottom:1rem}}.footer__item{margin-bottom:1rem}.footer__link:link,.footer__link:visited{display:inline-block;text-decoration:none;text-transform:uppercase;font-size:1.6rem;font-weight:bold;color:#0D0C0C}.footer__link:link:hover,.footer__link:visited:hover{color:#BA0C2F}.footer__icon{height:3rem;width:3rem;fill:#BA0C2F}.footer__copy-box .paragraph{text-align:left}@media only screen and (max-width: 26.125em){.footer__copy-box .paragraph{text-align:center}}@media only screen and (max-width: 26.125em){.footer__copy-box{-webkit-box-flex:0;-webkit-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%}}.social-icon{height:2rem;width:2rem;fill:#fff}.social-icon__links:not(:last-child){margin-right:3rem}.header{text-align:right}.header .header-content{padding:2rem 5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}@media only screen and (max-width: 33.125em){.header .header-content{height:65vh}}@media only screen and (max-width: 28.125em){.header .header-content{height:55vh;padding:2rem}}@media only screen and (max-width: 20em){.header .header-content{height:43vh}}@media only screen and (max-height: 40em){.header .header-content{height:65vh}}.header .header-content>*:not(:last-child){margin-bottom:5rem}.header .header-content .btn{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end}@media only screen and (max-width: 33.125em){.header .header-content .btn{margin-top:auto}}@media only screen and (max-width: 33.125em){.header .header-content .btn{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}}@media only screen and (max-width: 43.75em){.header .header-content .heading-primary--main{padding-left:22rem}}@media only screen and (max-width: 28.125em){.header .header-content .heading-primary--main{padding-left:10rem}}@media only screen and (max-width: 33.125em){.header .header-content .heading-primary--main{padding-left:18rem}}@media only screen and (max-width: 26.125em){.header .header-content .heading-primary--main{padding-left:8rem}}@media only screen and (max-width: 43.75em){.header{margin-bottom:42rem}}@media only screen and (max-width: 33.125em){.header{margin-bottom:15rem}}.navigation{padding:3rem}.navigation__checkbox{display:none}.navigation__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}@media only screen and (max-width: 43.75em){.navigation__nav{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}}@media only screen and (max-width: 43.75em){.navigation__logo-box{width:25rem}}.navigation__right{margin-left:auto}.navigation__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;list-style:none}.navigation__item:not(:last-child){margin-right:2rem}.navigation__link:link,.navigation__link:visited{text-decoration:none;text-transform:uppercase;font-size:1.7rem;font-weight:bold;color:#0D0C0C}@media only screen and (max-width: 43.75em){.navigation__link{display:none}}.navigation__menu--button{background-color:transparent;border:none}.navigation__menu--icon{height:3rem;width:3rem}.sidebar{position:relative;width:30vw;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (max-width: 26.125em){.sidebar{width:50vw}}@media only screen and (max-width: 20em){.sidebar{width:100vw}}.sidebar__close{background-color:transparent;border:none;position:absolute;top:1rem;left:1rem}.sidebar__icon{height:3rem;width:3rem;fill:#BA0C2F}.sidebar__nav{margin-top:1rem}.sidebar__item{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.sidebar__item:not(:last-child){margin-bottom:3rem}.sidebar__link:link,.sidebar__link:visited{font-size:2rem;font-weight:bold;text-transform:uppercase;text-decoration:none;position:relative;color:#0D0C0C;z-index:10;height:4rem;margin-right:2rem}.watermark-img{opacity:.1;position:absolute;top:10rem;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}@media only screen and (max-width: 75em){.watermark-img{width:60vw}}@media only screen and (max-width: 43.75em){.watermark-img{width:70vw;top:20rem}}.down-arrow__box{position:absolute;right:0;cursor:pointer}@media only screen and (max-width: 43.75em){.down-arrow__box{display:none}}.down-arrow__icon{fill:#BA0C2F;height:6rem;width:6rem}.section-ground-figures{padding:3rem 5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:10rem}@media only screen and (max-width: 43.75em){.section-ground-figures{margin-top:-22rem;padding:2rem 5rem}}@media only screen and (max-width: 37.5em){.section-ground-figures{margin-top:-25rem;margin-bottom:0rem}}@media only screen and (max-width: 20em){.section-ground-figures{margin-top:-36rem}}@media only screen and (max-width: 33.125em){.section-ground-figures{padding:3rem}}.section-ground-figures__text-box{-webkit-box-flex:0;-webkit-flex:0 1 30%;-ms-flex:0 1 30%;flex:0 1 30%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}@media only screen and (max-width: 43.75em){.section-ground-figures__text-box{-webkit-box-flex:0;-webkit-flex:0 1 80%;-ms-flex:0 1 80%;flex:0 1 80%;margin-bottom:10rem}}@media only screen and (max-width: 33.125em){.section-ground-figures__text-box{-webkit-box-flex:0;-webkit-flex:0 1 100%;-ms-flex:0 1 100%;flex:0 1 100%}}@media only screen and (max-height: 40em){.section-ground-figures__text-box{margin-bottom:5rem}}.section-cemeteries{padding:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (max-width: 43.75em){.section-cemeteries{padding:3rem 5rem;margin-bottom:3rem}}@media only screen and (max-width: 37.5em){.section-cemeteries{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}.section-municipalities{padding:5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (max-width: 43.75em){.section-municipalities{padding:3rem 5rem;margin-bottom:3rem}}@media only screen and (max-width: 37.5em){.section-municipalities{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column}}.section-franchise-opp{padding:5rem;margin:0 5rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media only screen and (max-width: 43.75em){.section-franchise-opp{padding:3rem 5rem}}@media only screen and (max-width: 37.5em){.section-franchise-opp{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;padding:3rem}}@media only screen and (max-width: 28.125em){.section-franchise-opp{padding:1rem}}
+
+
+        </style>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Omega Mapping | Home </title>
+    <link rel="canonical" href="/home">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+   
+    <link href="/favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+
+    <amp-sidebar id="sidebar-right" layout="nodisplay" side="right" class="sidebar">
+
+        <button class="sidebar__close ampstart-btn" on="tap:sidebar-right.close" role="button">
+            <svg class="sidebar__icon">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="sidebar__nav">
+            <ul class="sidebar__nav">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping Home Page">Home</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Franchise </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Cemeteries</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Municipalities</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Contact</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">About Us</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">News</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Store</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">History</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link" title="Omega Mapping">Franchise Application</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar__logo-box">
+            <amp-img src="img/Asset-5.png" alt="Omega Mapping Logo" class="sidebar__logo" width="205" height="80" layout="intrinsic"></amp-img>
+        </div>
+    </amp-sidebar>
+    <div id="top-page" class="navigation">
+        <nav class="navigation__nav">
+            <div class="navigation__left">
+                <div class="navigation__logo-box">
+                    <a href="#" class="navigation__logo" title="Omega Mapping Home Page">
+                        <amp-img src="img/Asset-5.png" class="logo" alt="Omega Mapping Logo" width="314" height="126" layout="intrinsic"></amp-img>
+                    </a>
+                </div>
+            </div>
+            <div class="navigation__right">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link" title="Omega Mapping Franchise Page">Franchise</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link" title="Omega Mapping Cemeteries Page">Cemeteries</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link" title="Omega Mapping Municipalities Page">Municipalities</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link" title="Omega Mapping Contact Page">Contact</a>
+                    </li>
+                    <li class="navigation__item navigation__menu">
+                         <button class="navigation__menu--button ampstart-btn" on="tap:sidebar-right.toggle" role="button">
+                            <svg class="navigation__menu--icon">
+                                <use xlink:href="../img/sprite.svg#icon-menu"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header class="header header-home">
+        <div class="header-content">
+            <h1 class="heading-primary--main">Ground Penetrating Radar Services</h1>
+            <h2 class="heading-primary--sub">If it's there, we'll find it.</h2>
+            <a href="#" class="btn btn--primary" title="Omega Mapping Contact Page">Discover What's Below</a>
+        </div>
+    </header>
+    <amp-img src="img/black&white_preview.jpeg" class="watermark-img" width="2200" height="2500" layout="intrinsic"></amp-img>
+    <main>
+        <div class="section-border">
+            <div class="section-border__line"></div>
+            <div class="section-border__icon">
+                <amp-img src="img/OMS-Logo-Vector_preview.png" class="section-border__img" width="30" height="30" layout="intrinsic"></amp-img>
+            </div>
+            <div class="section-border__line"></div>
+        </div>
+        <section class="section-ground-figures">
+            <div class="ground-figure__container">
+
+                <figure class="ground-figure">
+                    <amp-img src="img/broken-pipe_preview.jpeg" class="ground-figure__img" width="200" height="200" layout="intrinsic"></amp-img>
+    
+                    <figcaption class="ground-figure__caption">Precision Digging</figcaption>
+                </figure>
+    
+                <figure class="ground-figure">
+                    <amp-img src="img/hover-after_preview.png" class="ground-figure__img" width="200" height="200" layout="intrinsic"></amp-img>
+    
+                    <figcaption class="ground-figure__caption">Unused Gravespace</figcaption>
+                </figure>
+                <figure class="ground-figure">
+                    <amp-img src="img/Underground_preview.jpeg" class="ground-figure__img" width="200" height="200" layout="intrinsic"></amp-img>
+    
+                    <figcaption class="ground-figure__caption">Cavities</figcaption>
+                </figure>
+                <figure class="ground-figure">
+                    <amp-img src="img/Unmarked-Grave_preview.jpeg" class="ground-figure__img" width="200" height="200" layout="intrinsic"></amp-img>
+    
+                    <figcaption class="ground-figure__caption">Unmarked Graves</figcaption>
+                </figure>
+            </div>
+            <div class="section-ground-figures__text-box">
+                <p class="paragraph">Using ground penetrating radar services or GPR we are able to see underground before we dig. Saving countless
+                    hours and dollars for your city of cemetary. A busted pipe is easily located, unmarked graves are now
+                    marked. With Omega Mapping Services years of expereince in good hands.</p>
+            </div>
+            <div class="down-arrow__box">
+                <svg class="down-arrow__icon">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+            </div>
+        </section>
+        <div class="section-border section-border--vert">
+            <div class="section-border--vert__line"></div>
+            <div class="section-border--vert__icon">
+                <amp-img src="img/OMS-Logo-Vector_preview.png" class="section-border__img" width="30" height="30" layout="intrinsic"></amp-img>
+            </div>
+            <div class="section-border--vert__line"></div>
+        </div>
+            <section class="section-cemeteries">
+               
+                    <figure class="cemeteries__figure">
+                        <amp-img class="cemeteries__img" src="img/cemetery-main.jpeg" alt="Man using radar in cemetery" width="693" height="460.5" layout="responsive"></amp-img>
+                        <figcaption class="cemeteries__caption">More than 750,000 Burials mapped</figcaption>
+                    </figure>
+              
+                <div class="section-border--vert">
+
+                </div>
+                <div class="cemeteries__container--right">
+                    <h2 class="heading-secondary">Cemeteries</h2>
+                    <p class="paragraph">Using proven technology we are able to digitally map your entire graveyard thus finding unmarked graves
+                        and empty plots. The history we have uncovered is amazing and we pride ourselves in respect and expertise.
+                        </p>
+                    <p class="paragraph">If you have an old graveyard that hasn't been tracked over the years or an old burial ground, even an
+                        old battle field that you'd like mapped out. Helping you get the closure you need or fill up an empty
+                        graveyard.</p>
+                    <a href="#" class="btn btn--primary" title="Omega Mapping Cemetery Page">Cemetery Mapping</a>
+                </div>
+
+            </section>
+            
+            <section class="section-municipalities">
+                <div class="municipalities__container--left">
+                    <h2 class="heading-secondary">Municipalities</h2>
+                    <p class="paragraph">Cities grow quickly and occasionally situations can occur of a busted pipe without proper pipe mapping.
+                        paved over pipes or other overlooked situations. </p>
+                    <p class="paragraph">We can come map underground utilities, piping, and find cavities that have formed underground. In addition
+                        to mapping, if you have a water leak and you don't know where to start. instead of digging up countless
+                        amounts of dirt let us find the leak for you. Saving countless man hours, equipment, property damage
+                        and most importantly the money invested in finding the problem.</p>
+                    <a href="#" class="btn btn--primary" title="Omega Mapping Municipalities Page">Municipalities Mapping</a>
+                </div>
+                <div class="municipalities__img-box">
+                    <amp-img class="municipalities__img" src="img/Armstrong-GPR_preview.jpeg" alt="Man using radar in cemetery" width="540" height="695" layout="responsive"></amp-img>
+                </div>
+            </section>
+       
+
+        <div class="page-break-block">
+            <amp-img src="img/RV-Specific-sign2_preview.jpeg" class="page-break-img" alt="RV in a cemetery" width="1920" height="550"
+                layout="responsive"></amp-img>
+        </div>
+        <section class="section-franchise-opp">
+        
+
+                <div class="franchise-opp__container--left">
+                    <h2 class="heading-secondary">Franchise Opportunities</h2>
+                    <p class="paragraph">Growth with Omega mapping Services is very easy as providing your community with a resource to save time
+                        and money and multiple avenues. </p>
+                    <p class="paragraph">The alertnative is digging up everything underground to find where thigns are located. Which is not always
+                        possible so many cemeteries don't have a solution. We provide extremely cost effective way of mapping
+                        underground which can be used in municipalities as well as cemeteries to see whats underground without
+                        picking up a shovel. you don't have to try hard for sales as the sale is simply knowing what service
+                        you provide.</p>
+                    <a href="#" class="btn btn--primary" title="Omega Mapping Franchise Opportunities Page">Learn More</a>
+                        
+                </div>
+                <div class="franchise-opp__container--right">
+                    <p class="paragraph">We Provide all our Franchise with:</p>
+                    <ul class="franchise-opp__list">
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Hardware</span>
+                    </li>
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Training</span>
+                    </li>
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Sales Support</span>
+                        </li>
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Print Maps for you and Clients</span>
+                        </li>
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Website</span>
+                    </li>
+                        <li class="franchise-opp__item">
+                             <svg class="franchise-opp__icon">
+                            <use xlink:href="img/sprite.svg#icon-triangle-right"></use>
+                        </svg>
+                        <span class="paragraph">Accounting Support*</span>
+                        </li>
+                        <li class="franchise-opp__item franchise-opp__item--fine">*First year is free, after would be a fee.</li>
+                    </ul>
+                    <a href="#" class="btn btn--primary" title="Omega Mapping Franchise Opportunities Page">Learn More</a>
+                    
+                </div>
+         
+           
+        </section>
+        <div class="section-border">
+            <div class="section-border__line"></div>
+            <div class="section-border__icon">
+                <amp-img src="img/OMS-Logo-Vector_preview.png" class="section-border__img" width="30" height="30" layout="intrinsic"></amp-img>
+            </div>
+            <div class="section-border__line"></div>
+        </div>
+        <section class="section-cta">
+            <div class="cta__container--text">
+                <h2 class="heading-secondary">Didn't find your answer?</h2>
+                <p class="paragraph">There is so many ways that ground penetrating radar can help you. if you did not see the solution that you were looking for, don't dismiss us! Although we have our focus on services can be used for so many different solutions. </p>
+                <p class="paragraph">Contact us and we will be sure to respond to your inquiry to answer if we are able to complete the solution you are looking for. Our technology is advanced and capable of seeing deep underground. So if it is underground the most likely answer is, we can help.</p>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <a class="contact__link" href="tel:+(678) 963-0111" title="Omega Mapping Phone Number" target="_blank">
+                            <span class="paragraph">(678) 963-0111</span>
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <a href="#" class="contact__link" title="Omega Mapping Mailing Address">
+                            <span class="paragraph">OMS PO Box 796<br> Social Circle, Georgia 30025</br>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cta__container--form">
+                <form action-xhr="//omegamapping.com/contact.php" method="POST" target="_top" class="form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full name</label>
+                        <input type="text" name="name" class="form__input" required placeholder="Required">
+                    </div>
+                    <div class="form__group">
+                        <label for="number" class="form__label">Phone</label>
+                        <input type="tel" name="number" class="form__input" required placeholder="Required">
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">email</label>
+                        <input type="email" name="email" class="form__input" required placeholder="Required">
+                    </div>
+                    <div class="form__group">
+                        <label for="comments" class="form__label">comments</label>
+                        <textarea class="form__input--comments" name="message" rows="10" cols="50" required placeholder="Required"></textarea>
+                    </div>
+                    <div class="form__group ">
+                       
+                        <label for="policy" class="form__label--checkbox">I agree to the Privacy Policy
+                            <input class="form__checkbox" type="checkbox" required name="policy" id="policy">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div submit-success>
+                        <template class="success-" type="amp-mustache">
+                            <p class="paragraph">
+                                Success! Thanks {{name}} , we'll get back to you shortly.
+                            </p>
+                        </template>
+                    </div>
+
+                    <div submit-error>
+                        <template type="amp-mustache">
+                            <p class="paragraph">
+                                Error! Please re-submit your infomration.
+                            </p>
+                        </template>
+                    </div>
+                    <div class="form__group">
+                        <input type="submit" class="btn btn--primary" value="Get Help">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--top">
+            <div class="footer__logo-box">
+                <amp-img class="footer__logo" src="img/Asset-5.png" width="314" height="126" alt="Omega Mapping Logo" layout="intrinsic"></amp-img>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Home Page">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Cemeteries Page">Cemeteries</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Municipalities Page">Municipalities</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Cemeteries Page">Cemeteries</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Franchise Opportunities Page">Franchise Opportunities</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping RV Franchises Page">RV Franchises</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Franchise Application Page">Franchise Application</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Optional Page">Optional</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping News Page">News</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Store Page">Store</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping History Page">History</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" title="Omega Mapping Contact Page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="footer__top-page-btn">
+                <a href="#top-page" class="top-page-btn" on="tap:top-page.scrollTo(duration=200)">
+                    <svg class="footer__icon">
+                        <use xlink:href="img/sprite.svg#icon-arrow-up"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer--copy">
+            <div class="footer__copy-box">
+                <p class="paragraph paragraph--white">© Omega Mapping Services 2018</p>
+            </div>
+            <div class="footer__social-icons">
+                    <a href="#" class="social-icon__links" target="_blank" title="Omega Mapping Services YouTube Page">
+                        <svg class="social-icon">
+                                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                            </svg>
+                    </a>
+                <a href="https://www.facebook.com/omegamapping/" class="social-icon__links" target="_blank" title="Omega Mapping Services Facebook Page">
+                    <svg class="social-icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                </a>
+                <a href="#" class="social-icon__links" target="_blank" title="Omega Mapping Services Twitter Page">
+                        <svg class="social-icon">
+                                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                </a>
+                <a href="#" class="social-icon__links" target="_blank" title="Omega Mapping Services Instagram Page">
+                        <svg class="social-icon">
+                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+    </html>

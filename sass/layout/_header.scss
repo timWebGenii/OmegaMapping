@@ -1,0 +1,63 @@
+.header {
+    text-align: right;
+    .header-content {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-flow: column;
+
+    @include respond (phone-switch) {
+        height: 65vh;
+    }
+    @include respond (lg-phone) {
+        height: 55vh;
+        padding: 2rem;
+    }
+    @include respond (sm-phone) {
+        height: 43vh;
+    }
+    @include respond (phone-ht) {
+        height: 65vh;
+    }
+       
+        & > *:not(:last-child){
+            margin-bottom: 5rem;
+        }
+        
+        & .btn{
+            align-self: flex-end;
+
+            @include respond (phone-switch) {
+                margin-top: auto;
+            }
+
+            @include respond (phone-switch) {
+                align-self: center;
+            }
+           
+        }
+        & .heading-primary--main{
+            @include respond (tab){
+          padding-left: 22rem;
+        }
+
+        @include respond (lg-phone) {
+            padding-left: 10rem;
+        }
+        @include respond (phone-switch) {
+            padding-left: 18rem;
+        }
+        @include respond (phone) {
+            padding-left: 8rem;
+        }
+        }
+        
+    }
+    @include respond (tab) {
+        margin-bottom: 42rem;
+    }
+    
+    @include respond (phone-switch) {
+        margin-bottom: 15rem;
+    }
+    
+}

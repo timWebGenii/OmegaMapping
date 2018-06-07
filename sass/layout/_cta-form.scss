@@ -1,0 +1,209 @@
+.section-cta{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 15rem 15rem 15rem;
+    background-color: $color-white;
+    box-shadow: 0 20px 40px rgba(#2699FB, .2);
+    padding: 5rem;
+    @include respond (tab-port) {
+        margin: 5rem;
+      
+    }
+    @include respond (tab) {
+        margin: 5rem;
+        flex-flow: column;
+    }
+    @include respond (lg-phone){
+        margin: 1rem;
+        margin-bottom: 8rem;
+        
+    }
+}
+.cta{
+    &__container--text{
+        flex: 0 1 45%;
+        @include respond (tab) {
+           margin-bottom: 5rem;
+        }
+        & > *:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+    &__container--form{
+        flex: 0 1 50%;
+    }
+}
+//////////////////////////////////////////////////////
+/////////// CONTACT LIST
+.contact{
+    &__list{
+        margin-top: 3rem;
+        list-style: none;
+        @include respond (tab) {
+            display: flex;
+            justify-content: space-around;
+         }
+         @include respond (lg-phone){
+           flex-flow: column;
+           
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+        
+    }
+    &__link{
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $default-color;
+        }
+    }
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: $color-primary;
+        margin-right: 5px;
+    }
+}
+
+///////////////////////////////////////////
+////// CTA FORM
+.form{
+    margin-top: 1rem;
+    &__group{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+        @include respond (tab) {
+            flex-flow: column;
+         }
+
+         & .btn {
+            @include respond (tab) {
+               align-self: flex-start;
+               font-size: 3rem;
+               padding: 3rem;
+               }
+         }
+    }
+    &__label{
+        background-color: $color-black;
+        color: $color-white;
+        width: 10rem;
+        height: 50px;
+        padding: 17px 0 0 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include respond (tab) {
+          text-align: center;
+          padding-left: 0;
+         }
+    }
+    &__input,
+    &__input--comments{
+        width: 100%;
+        font-family: inherit;
+        padding: 1rem 2rem;
+        display: block;
+        border: 1px solid $color-black;
+
+       @include respond (tab) {
+           height: 50px;
+       }
+        &::-webkit-input-placeholder{
+            color: rgba($color-primary, .34);
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-primary, .1);
+            border: 2px solid $color-primary;
+      }
+        
+    }
+    &__input--comments{
+        @include respond (tab){
+            height: 150px;
+        }
+    }
+
+    &__input:focus .form__label {
+        background-color: $color-primary;
+    }
+   &__label--checkbox{
+        display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 2rem;
+  user-select: none;
+
+    }
+    &__checkbox{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+.checkmark{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $border-color;
+    transition: all .2s;
+}
+&__label--checkbox:hover input ~ .checkmark{
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+}
+
+&__label--checkbox input:checked ~ .checkmark{
+    background-color: $color-primary;
+}
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    color: $color-primary;
+}
+&__label--checkbox input:checked ~ .checkmark:after{
+    display: block;
+}
+&__label--checkbox .checkmark:after{
+    left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+&.amp-form-submit {
+    &-success [submit-success],
+    &-error [submit-error] {
+          margin-top: 1.6rem;
+          
+    }
+    &-success [submit-success] {
+          color: green;
+    }
+    &-error [submit-error] {
+          color: red;
+    }
+    &-success.hide-inputs>button {
+          display: none;
+    }
+}
+
+}

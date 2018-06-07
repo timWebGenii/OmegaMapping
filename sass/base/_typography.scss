@@ -1,0 +1,56 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $default-color;
+    
+}
+
+.heading-primary{
+
+      &--main{
+            font-size: 5rem;
+            font-weight: bold;
+
+            @include respond(tab-small) {
+                  font-size: 3.5rem;
+            }
+      }
+
+      &--sub {
+            font-size: 4rem;
+            font-weight: 400;
+
+            text-transform: capitalize;
+
+            @include respond(tab-small) {
+                  font-size: 2.5rem;
+            }
+      }
+
+
+}
+
+.heading-secondary{
+      font-size: 4.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      @include respond (tab) {
+            font-size: 3.5rem;
+      }
+}
+
+.paragraph {
+      font-size: $default-font-size;
+      text-align: justify;
+
+      &:not(:last-child) {
+            margin-bottom: 2rem;
+      }
+
+      &--white{
+            color: $color-white;
+      }
+}
+

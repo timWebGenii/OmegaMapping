@@ -1,0 +1,26 @@
+.municipalities{
+    &__container--left{
+        flex: 0 1 40%;
+        display: flex;
+        flex-flow: column;
+        & .heading-secondary{
+            text-align: left;
+        }
+
+        & .btn{
+            margin-top: 5rem;
+            align-self: flex-start;
+            @include respond (tab-small) {
+                align-self: center;
+             }
+        }
+    }
+
+    &__img-box{
+        flex: 0 1 40%;
+        @include respond (tab-small) {
+            width: 100%;
+            margin-top: 5rem;
+         }
+    }
+}

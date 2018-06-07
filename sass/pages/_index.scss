@@ -1,0 +1,131 @@
+.watermark-img {
+    opacity: .1;
+
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond (tab-land) {
+        width: 60vw;
+    }
+    @include respond (tab) {
+        width: 70vw;
+        top: 20rem;
+    }
+   
+}
+
+.down-arrow{
+    &__box {
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+        @include respond (tab) {
+            display: none;
+        }
+    }
+
+    &__icon{
+        fill: $color-primary;
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+.section-ground-figures {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+    @include respond (tab) {
+        margin-top: -22rem;
+        padding: 2rem 5rem;
+    }
+
+    @include respond (tab-small){
+        margin-top: -25rem;
+        margin-bottom: 0rem;
+    }
+
+    @include respond (sm-phone) {
+        margin-top: -36rem;
+    }
+
+    @include respond (phone-switch) {
+       padding: 3rem;
+     }
+
+    &__text-box{
+        flex: 0 1 30%;
+        align-self: center;
+            @include respond (tab){
+                flex: 0 1 80%;
+                margin-bottom: 10rem;
+            }
+            @include respond (phone-switch) {
+                flex: 0 1 100%;
+             }
+             @include respond (phone-ht){
+                margin-bottom: 5rem;
+            }
+    }
+}
+
+.section-cemeteries{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond (tab) {
+        padding: 3rem 5rem;
+        margin-bottom: 3rem;
+    }
+
+    @include respond (tab-small) {
+        flex-flow: column;
+    }
+  
+}
+
+.section-municipalities{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+    @include respond (tab) {
+        padding: 3rem 5rem;
+        margin-bottom: 3rem;
+        
+    }
+    @include respond (tab-small) {
+        flex-flow: column;
+    }
+}
+
+.section-franchise-opp{
+    padding: 5rem;
+    margin: 0 5rem;
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond (tab) {
+        padding: 3rem 5rem;
+    }
+
+    @include respond (tab-small) {
+        flex-flow: column;
+        padding: 3rem;
+    }
+    @include respond (lg-phone) {
+        padding: 1rem;
+    }
+
+    
+}

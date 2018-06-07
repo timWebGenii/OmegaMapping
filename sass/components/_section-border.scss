@@ -1,0 +1,58 @@
+.section-border{
+    display: flex;
+    align-items: center;
+  
+
+    &__line{
+        border-bottom: 1px solid $border-color;
+        flex: 50%;
+        margin: 10rem 0;
+
+        @include respond (tab){
+            margin: 5rem 0;
+
+        }
+        @include respond (sm-phone) {
+        margin: 10rem 0;
+    }
+    }
+
+    &__icon {
+        padding: 0rem 5rem;
+    }
+
+    &--vert{
+        flex-flow: column;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include respond (tab-port) {
+        padding-top: 4rem;
+            
+        }
+        @include respond (tab) {
+            padding-top: 2rem;
+                
+            }
+
+            @include respond (tab-small) {
+                display: none;
+            }
+        &__line{
+            border-right: 1px solid $border-color;
+            height: 55rem;
+
+
+            @include respond (tab-port) {
+               height: 45rem;
+            }
+            @include respond (tab) {
+               height: 40rem;
+                }
+        }
+        &__icon {
+            padding: 5rem 0;
+        }
+    }
+}
