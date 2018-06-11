@@ -1,10 +1,11 @@
-.watermark-img {
+.home-background {
     opacity: .1;
 
     position: absolute;
     top: 10rem;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
 
     @include respond (tab-land) {
         width: 60vw;
@@ -14,24 +15,6 @@
         top: 20rem;
     }
    
-}
-
-.down-arrow{
-    &__box {
-        position: absolute;
-        right: 0;
-        cursor: pointer;
-
-        @include respond (tab) {
-            display: none;
-        }
-    }
-
-    &__icon{
-        fill: $color-primary;
-        height: 6rem;
-        width: 6rem;
-    }
 }
 
 .section-ground-figures {

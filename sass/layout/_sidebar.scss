@@ -1,16 +1,17 @@
 .sidebar{
     position: relative;
-    width: 30vw;
+    width: 40vw;
+    text-align: right;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
 
-    @include respond (phone) {
+    @include respond (tab) {
         width: 50vw;
     }
 
-    @include respond (sm-phone) {
+    @include respond (phone-switch) {
         width: 100vw;
     }
 

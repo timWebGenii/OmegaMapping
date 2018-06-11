@@ -1,0 +1,48 @@
+.lost-history,
+.potential-plots {
+    &__figure{
+        text-align: center;
+        position: relative;
+        margin-bottom: 6rem;
+
+       
+    }
+   
+    &__caption{
+        font-size: 3rem;
+        text-transform: capitalize;
+        display: inline-block;
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem 2rem;
+   box-shadow: 0 3px 6px $color-black;
+        
+@include respond (tab-small){
+    font-size: 2.5rem;
+    bottom: -3rem;
+}
+
+@include respond (phone) {
+    font-size: 2rem;
+}
+
+@include respond (sm-phone) {
+    font-size: 1.5rem;
+}
+    }
+    &__text-box{
+        width: 59vw;
+        margin: 0 auto;
+
+        @include respond (tab-port){
+            width: 75vw;
+        }
+
+        @include respond (tab-small) {
+            width: 100vw;
+            padding: 3rem;
+        }
+    }
+}

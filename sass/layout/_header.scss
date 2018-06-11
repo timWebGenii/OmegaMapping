@@ -1,63 +1,93 @@
 .header {
     text-align: right;
-    .header-content {
-    padding: 2rem 5rem;
-    display: flex;
-    flex-flow: column;
 
-    @include respond (phone-switch) {
-        height: 65vh;
-    }
-    @include respond (lg-phone) {
-        height: 55vh;
-        padding: 2rem;
-    }
-    @include respond (sm-phone) {
-        height: 43vh;
-    }
-    @include respond (phone-ht) {
-        height: 65vh;
-    }
-       
-        & > *:not(:last-child){
-            margin-bottom: 5rem;
-        }
-        
-        & .btn{
-            align-self: flex-end;
+    &-content{
+        padding: 2rem 5rem;
+            display: flex;
+            flex-flow: column;
 
-            @include respond (phone-switch) {
-                margin-top: auto;
+            &>*:not(:last-child) {
+                margin-bottom: 5rem;
             }
+            & .btn {
+                align-self: flex-end;
+            }
+    }
+    &-home{
 
+        .header-content {
+            
             @include respond (phone-switch) {
-                align-self: center;
+                height: 65vh;
+            }
+            @include respond (lg-phone) {
+                height: 55vh;
+                padding: 2rem;
+            }
+            @include respond (sm-phone) {
+                height: 43vh;
+            }
+            @include respond (phone-ht) {
+                height: 65vh;
             }
            
+            & .btn {
+                @include respond (phone-switch) {
+                    margin-top: auto;
+                }
+                @include respond (phone-switch) {
+                    align-self: center;
+                }
+            }
+            & .heading-primary--main {
+                @include respond (tab) {
+                    padding-left: 22rem;
+                }
+                @include respond (lg-phone) {
+                    padding-left: 10rem;
+                }
+                @include respond (phone-switch) {
+                    padding-left: 18rem;
+                }
+                @include respond (phone) {
+                    padding-left: 8rem;
+                }
+            }
         }
-        & .heading-primary--main{
-            @include respond (tab){
-          padding-left: 22rem;
-        }
+    }
+    
 
-        @include respond (lg-phone) {
-            padding-left: 10rem;
+        @include respond (tab) {
+            margin-bottom: 42rem;
         }
         @include respond (phone-switch) {
-            padding-left: 18rem;
+            margin-bottom: 15rem;
         }
-        @include respond (phone) {
-            padding-left: 8rem;
-        }
-        }
-        
-    }
-    @include respond (tab) {
-        margin-bottom: 42rem;
-    }
     
-    @include respond (phone-switch) {
-        margin-bottom: 15rem;
+
+    &-cemeteries {
+        margin-bottom: 22rem;
+
+
+        @include respond (tab-land) {
+            margin-bottom: 16rem;
+        }
+
+        @include respond (tab-small) {
+            margin-bottom: 10rem;
+        }
+        .header-content{
+            @include respond (phone-switch){
+                align-items: center;
+                padding: 2rem;
+                text-align: center;
+                & .btn {
+                    align-self: center;
+                }
+                &>*:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
     }
-    
 }

@@ -13,7 +13,7 @@
         margin: 5rem;
         flex-flow: column;
     }
-    @include respond (lg-phone){
+    @include respond (phone-switch){
         margin: 1rem;
         margin-bottom: 8rem;
         

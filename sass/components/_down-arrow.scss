@@ -1,0 +1,18 @@
+.down-arrow{
+    &__box {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        cursor: pointer;
+
+        @include respond (tab) {
+            display: none;
+        }
+    }
+
+    &__icon{
+        fill: $color-primary;
+        height: 6rem;
+        width: 6rem;
+    }
+}

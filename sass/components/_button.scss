@@ -42,5 +42,7 @@
     &--primary {
         background-color: $color-primary;
         display: inline-block;
+   box-shadow: 0 3px 6px $color-black;
+        
     }
 }

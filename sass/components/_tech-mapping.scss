@@ -1,0 +1,37 @@
+.tech-mapping{
+    &__img-box,
+    &__container--right{
+        flex: 0 1 47%;
+    }
+
+    &__container--right{
+
+        display: flex;
+        flex-flow: column;
+        @include respond (tab-small) {
+            width: 100%;
+            text-align: center;
+        }
+       
+
+        & .btn{
+            margin-top: 5rem;
+            align-self: flex-end;
+            @include respond (tab-small) {
+               align-self: center;
+               margin-top: 1rem;
+
+            }
+        }
+    }
+&__img{
+        box-shadow: 0 3px 6px $color-black;
+       
+    }
+    &__img-box{
+        @include respond (tab-small){
+            width: 100%;
+             margin-bottom: 3rem;
+         }
+    }
+}
