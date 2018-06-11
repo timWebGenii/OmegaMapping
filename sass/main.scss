@@ -8,15 +8,13 @@
 @import 'base/utilities';
 
 @import 'components/button';
-// @import 'components/cemeteries';
 @import 'components/down-arrow';
-// @import 'components/franchise-opp';
-// @import 'components/ground-figure';
-@import 'components/lost-potential';
-// @import 'components/municipalities';
-@import 'components/results';
+@import 'components/franchise-opp';
+@import 'components/ground-figure';
+@import 'components/figure-contentBottom';
+@import 'components/contentLeft-pic';
 @import 'components/section-border';
-@import 'components/tech-mapping';
+@import 'components/pic-contentRight';
 
 @import 'layout/cta-form';
 @import 'layout/footer';
@@ -24,5 +22,6 @@
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
-// @import 'pages/index';
+@import 'pages/index';
 @import 'pages/cemeteries';
+@import 'pages/municipalities';

@@ -7,8 +7,12 @@
         width: 100vw;
         height: 80rem;
 
-        @include respond (tab-small) {
-            height: 60rem;
+        @include respond (tab) {
+            height: 100rem;
+        }
+
+        @include respond (phone-switch) {
+            height: 80rem;
         }
 
 }
@@ -16,48 +20,18 @@
     width: 100%;
     height: 100%;
 }
-.section-cemetery-text{
-   width: 65vw;
-   margin: 0 auto;
-   box-shadow: 0 3px 6px $color-black;
 
-   @include respond (tab-small) {
-       width: 90vw;
-   }
-
-}
 .section-tech-mapping {
-    padding: 3rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include respond (tab-small){
-        flex-flow: column;
-        align-items: center;
-        padding: 3rem;
-    }
+   
     
 }
 
 .section-results{
-    padding: 3rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include respond (tab-small){
-        flex-flow: column;
-        padding: 3rem;
-    }
+    
 }
 
 .section-lost-history,
 .section-potential-plots{
-    padding: 3rem 5rem;
-
-    @include respond (tab-small){
-       padding: 3rem 0;
-    }
+   
 }
 

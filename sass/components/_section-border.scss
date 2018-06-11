@@ -31,12 +31,9 @@
         padding-top: 4rem;
             
         }
-        @include respond (tab) {
-            padding-top: 2rem;
-                
-            }
+      
 
-            @include respond (tab-small) {
+            @include respond (tab) {
                 display: none;
             }
         &__line{
@@ -47,9 +44,7 @@
             @include respond (tab-port) {
                height: 45rem;
             }
-            @include respond (tab) {
-               height: 40rem;
-                }
+            
         }
         &__icon {
             padding: 5rem 0;

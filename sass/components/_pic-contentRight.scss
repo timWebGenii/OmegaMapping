@@ -1,0 +1,60 @@
+.pic-contentRight{
+
+    padding: 3rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond (tab){
+        flex-flow: column;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    &__img-box,
+    &__container--right,
+    &__figure{
+        flex: 0 1 47%;
+    }
+
+    &__container--right{
+
+        display: flex;
+        flex-flow: column;
+        @include respond (tab) {
+            width: 100%;
+            text-align: center;
+        }
+       
+
+        & .btn{
+            margin-top: 5rem;
+            align-self: flex-end;
+            @include respond (tab) {
+               align-self: center;
+               margin-top: 1rem;
+
+            }
+        }
+    }
+&__img{
+        box-shadow: 0 3px 6px $color-black;
+       
+    }
+    &__img-box{
+        text-align: left;
+        @include respond (tab){
+            width: 100%;
+             margin-bottom: 3rem;
+             text-align: center;
+         }
+    }
+    &__caption{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}

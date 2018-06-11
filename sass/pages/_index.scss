@@ -59,36 +59,11 @@
 }
 
 .section-cemeteries{
-    padding: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include respond (tab) {
-        padding: 3rem 5rem;
-        margin-bottom: 3rem;
-    }
-
-    @include respond (tab-small) {
-        flex-flow: column;
-    }
   
 }
 
 .section-municipalities{
-    padding: 5rem;
-    display: flex;
-    justify-content: space-between;    
-    align-items: center;
-
-    @include respond (tab) {
-        padding: 3rem 5rem;
-        margin-bottom: 3rem;
-        
-    }
-    @include respond (tab-small) {
-        flex-flow: column;
-    }
+  
 }
 
 .section-franchise-opp{

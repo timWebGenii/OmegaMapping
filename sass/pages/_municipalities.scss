@@ -1,0 +1,29 @@
+.municipalities-background-box{
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+        width: 100vw;
+        height: 80rem;
+
+        @include respond (tab) {
+            height: 70rem;
+        }
+        @include respond (tab-small) {
+            height: 60rem;
+        }
+}
+.municipalities-background{
+    width: 100%;
+    height: 100%;
+}
+.section-underground-ut{
+    margin-bottom: 8rem;
+}
+.section-busted-pipes{
+    margin-top: 8rem;
+}
+.section-underground-mapping {
+    margin-top: 8rem;
+}

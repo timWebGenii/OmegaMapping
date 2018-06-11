@@ -1,5 +1,13 @@
 .header {
     text-align: right;
+    @include respond (tab) {
+        margin-bottom: 42rem;
+    }
+    @include respond (phone-switch) {
+        margin-bottom: 15rem;
+    }
+
+   
 
     &-content{
         padding: 2rem 5rem;
@@ -57,14 +65,6 @@
     }
     
 
-        @include respond (tab) {
-            margin-bottom: 42rem;
-        }
-        @include respond (phone-switch) {
-            margin-bottom: 15rem;
-        }
-    
-
     &-cemeteries {
         margin-bottom: 22rem;
 
@@ -73,21 +73,108 @@
             margin-bottom: 16rem;
         }
 
-        @include respond (tab-small) {
-            margin-bottom: 10rem;
+        @include respond (tab) {
+            margin-bottom: 0rem;
         }
         .header-content{
-            @include respond (phone-switch){
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            @include respond(tab){
+                flex-flow: column;
+                text-align: center;
+                
+            }
+           
+            &__video-box{
+                flex: 1 0 40%;
+
+                @include respond (tab) {
+                    width: 90vw;
+                    order: 1;
+                    margin-top: 5rem;
+                }
+            }
+            &__title-box{
+                flex: 0 1 50%;
+                
+                &>*:not(:last-child) {
+                    margin-bottom: 5rem;
+                }
+
+                @include respond (tab) {
+                    &>*:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            &__video{
+                width: 100%;
+                
+            }
+
+            @include respond (tab-small){
                 align-items: center;
                 padding: 2rem;
-                text-align: center;
                 & .btn {
                     align-self: center;
                 }
-                &>*:not(:last-child) {
-                    margin-bottom: 1rem;
-                }
+                
             }
         }
     }
+
+    &-municipalities{
+        margin-bottom: 22rem;
+
+
+        @include respond (tab-land) {
+            margin-bottom: 16rem;
+        }
+
+        @include respond (tab) {
+            margin-bottom: 10rem;
+        }
+        
+        @include respond (lg-phone) {
+            margin-bottom: 5rem;
+        }
+
+        .header-content{
+            padding: 2rem 5rem;
+            display: flex;
+            flex-flow: column;
+
+            &>*:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+            & .btn {
+                align-self: flex-end;
+            }
+
+            @include respond(tab){
+                flex-flow: column;
+                text-align: center;
+                
+            }
+
+            & .btn {
+                @include respond(tab){
+                   align-self: center;
+                    
+                }
+            }
+    }
 }
+}
+.header-bottom-text{
+    width: 65vw;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px $color-black;
+ 
+    @include respond (tab-small) {
+        width: 90vw;
+    }
+ 
+ }
