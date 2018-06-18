@@ -36,10 +36,17 @@
     &__img-box{
         text-align: right;
         @include respond (tab){
-            width: 100%;
+            width: 75%;
              margin-bottom: 3rem;
              text-align: center;
          }
+         @include respond (phone-switch) {
+             width: 90%;
+         }
+    }
+    &__img{
+        box-shadow: 0 3px 6px $color-black;
+       
     }
 
 }

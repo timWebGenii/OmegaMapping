@@ -15,6 +15,7 @@
     }
     @include respond (phone-switch){
         margin: 1rem;
+        margin-top: 5rem;
         margin-bottom: 8rem;
         
     }
@@ -63,6 +64,10 @@
         &:visited{
             text-decoration: none;
             color: $default-color;
+
+            &:hover{
+                color: $color-primary;
+            }
         }
     }
     &__icon{
@@ -107,6 +112,8 @@
           text-align: center;
           padding-left: 0;
          }
+
+         
     }
     &__input,
     &__input--comments{
@@ -127,6 +134,7 @@
             box-shadow: 0 1rem 2rem rgba($color-primary, .1);
             border: 2px solid $color-primary;
       }
+      
         
     }
     &__input--comments{

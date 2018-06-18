@@ -43,11 +43,16 @@
     }
     &__img-box{
         text-align: left;
+       
         @include respond (tab){
-            width: 100%;
-             margin-bottom: 3rem;
+            width: 75%;
+            margin-top: 3rem;
              text-align: center;
+             order: 1;
          }
+         @include respond (phone-switch) {
+            width: 90%;
+        }
     }
     &__caption{
         text-align: center;

@@ -1,0 +1,40 @@
+.section-store{
+  
+    display: flex;
+
+}
+.store{
+    &__container--right{
+        display: flex;
+        flex-flow: column;
+        
+    }
+    &__text-box{
+        margin-top: 5rem;
+    }
+    &__merchandise{
+        margin-top: auto;
+        display: flex;
+        margin-bottom: 5rem;
+    }
+    &__item {
+        list-style: none;
+        text-align: center;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        &--img{
+           box-shadow: $box-shadow; 
+        }
+        &--title{
+            border: none;
+        }
+
+        &--price{
+            color: $color-primary;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
+}

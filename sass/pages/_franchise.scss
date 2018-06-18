@@ -1,0 +1,27 @@
+.franchise-background-box{
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+        width: 100vw;
+        height: 80rem;
+
+        @include respond (tab-port) {
+            height: 120rem;
+        }
+        @include respond (tab) {
+            height: 110rem;
+        }
+        @include respond (phone-switch) {
+            height: 100rem;
+        }
+
+}
+.franchise-background{
+    width: 100%;
+    height: 100%;
+}
+.section-training{
+    margin-top: 5rem;
+}

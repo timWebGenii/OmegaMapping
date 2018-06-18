@@ -167,6 +167,120 @@
             }
     }
 }
+        &-franchise{
+            margin-bottom: 5rem;
+            & .header-content{
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+
+                @include respond (tab-port){
+                    flex-flow: column;
+
+                    & .btn{
+                        align-self: center;
+                    }
+                }
+            }
+
+            &__text-box{
+               display: flex;
+               flex-flow: column;
+               
+               &>*:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+            @include respond (tab-port){
+                text-align: center;
+                
+            }
+            }
+        }
+        &-contact{
+            text-align: center;
+            padding: 0;
+            margin-bottom: 3rem;
+            & .paragraph{
+                text-align: center;
+            }
+            & .section-contact-buttons{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: center;
+            }
+            & .contact__buttons{
+                background-color: $color-white;
+                height: 30rem;
+                width: 30rem;
+               font-size: 3rem;
+               color: $color-primary;
+               outline: none;
+                text-align: center;
+                border: 3px solid $color-primary;
+                box-shadow: 0 20px 40px rgba(#2699FB, .2);
+                cursor: pointer;
+                transition: all .2s;
+               &:not(:last-child){
+                   margin-bottom: 1rem;
+               }
+               &:hover{
+                   background-color: $color-primary;
+                   color: $color-white;
+        text-shadow: 0 3px 5px $color-black;
+
+               }
+            }
+        }
+        &-news{
+            padding:1rem;
+            text-align: left;
+            @include respond (tab) {
+                margin-bottom: 3rem;
+            }
+            & .header-content{
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                @include respond (tab-land){
+                    flex-flow: column;
+                    align-items: center;
+                }
+                &__text{
+                    flex: 1 0 20%;
+                    margin-right: 3rem;
+                    @include respond (tab-land){
+                       width: 60vw;
+                        text-align: center;
+
+                       & .paragraph{
+                           text-align: center;
+                       }
+                    }
+                }
+                &__top-news{
+                  flex:0 1 63%;
+
+                  @include respond (tab-land){
+                    width: 70vw;
+                }
+                @include respond (tab-port){
+                    width: 90vw;
+                }
+                
+                    & .news__card{
+                        padding: 1.5rem;
+                    }
+                & .news__img-box,
+                & .news__text-box{
+                    flex: 0 1 45%;
+                   
+                }
+                }
+                
+            }
+        }
 }
 .header-bottom-text{
     width: 65vw;

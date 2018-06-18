@@ -1,0 +1,19 @@
+.ampTabContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabButton[selected] {
+    outline: none;
+}
+
+
+.tabContent {
+    display: none;
+    width: 100%;
+    order: 1; /* must be greater than the order of the tab buttons to flex to the next line */
+}
+
+.tabButton[selected]+.tabContent {
+    display: flex;
+}

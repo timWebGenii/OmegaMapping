@@ -1,0 +1,89 @@
+.hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: $color-primary;
+    color: $color-white;
+    text-shadow: 0 3px 5px $color-black;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    transition: all .2s;
+    backface-visibility: hidden;
+    cursor: pointer;
+    @include respond (phone-switch) {
+        width: 14rem;
+        height: 14rem
+    }
+    @include respond (sm-phone) {
+        width: 11.5rem;
+        height: 11.5rem
+    }
+    & .heading-secondary {
+        text-align: center;
+        border: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        @include respond (sm-phone) {
+            font-size: $default-font-size;
+        }
+    }
+    &-row {
+        display: flex;
+        justify-content: center;
+        &:not(:last-of-type) {
+            margin-bottom: -4rem;
+            @include respond (phone-switch) {
+                margin-bottom: -2rem;
+
+            }
+        }
+    }
+    &-center {
+        background-color: $color-white;
+        color: $color-primary;
+        text-shadow: none;
+    }
+    &-caption {
+        width: 11rem;
+        height: 11rem;
+        background-color: $color-white;
+        color: $color-primary;
+        text-shadow: none;
+        margin-top: -5rem;
+        
+        & .heading-secondary{
+            font-size: 1.4rem;
+            @include respond (phone) {
+                font-size: 1.2rem;;
+            }
+        }
+
+        @include respond (phone) {
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+    &-component {
+        flex: 0 1 50%;
+    }
+   
+   
+    &-shadow {
+        filter: drop-shadow(0 .4rem .4rem rgba($color-black, 0.5));
+        backface-visibility: hidden;
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+        &:hover {
+            filter: drop-shadow(0 1rem 1rem rgba($color-black, 0.5));
+            & .hexagon {
+                transform: scale(1.1);
+            }
+            & .hexagon-center {
+                transform: scale(1);
+            }
+        }
+    }
+}

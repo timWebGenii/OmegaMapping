@@ -6,15 +6,7 @@
     &__line{
         border-bottom: 1px solid $border-color;
         flex: 50%;
-        margin: 10rem 0;
-
-        @include respond (tab){
-            margin: 5rem 0;
-
-        }
-        @include respond (sm-phone) {
-        margin: 10rem 0;
-    }
+      
     }
 
     &__icon {

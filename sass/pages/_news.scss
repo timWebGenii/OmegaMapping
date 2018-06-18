@@ -1,0 +1,23 @@
+.section-news{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 10rem;
+    margin: 5rem auto;
+    & .news__card{
+        flex: 0 1 30%;
+
+        @include respond (tab) {
+            flex: 0 1 45%;
+
+            margin-bottom: 5rem;
+        }
+        @include respond (phone-switch) {
+            flex: 0 1 100%;
+        }
+       
+    }
+    @include respond (tab-port){
+        padding: 0 5rem;
+    }
+}

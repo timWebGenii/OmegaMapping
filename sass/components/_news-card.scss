@@ -1,0 +1,27 @@
+.news {
+    &__card{
+        box-shadow: 0 20px 40px rgba(#2699FB, .2);
+        
+    }
+    &__top-news-bottom-row{
+        display: flex;
+        justify-content: space-between;
+        @include respond (tab-small){
+         flex-flow: column;               
+        }
+        
+    }
+
+    &__img{
+        width: 100%;
+    }
+    &__text-box{
+        padding: 1.5rem;
+        display: flex;
+        flex-flow: column;
+
+        & .btn{
+            align-self: flex-end;
+        }
+    }
+}

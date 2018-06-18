@@ -19,6 +19,10 @@
     }
     &__right{
         margin-left: auto;
+
+        &:hover{
+            color: $color-primary;
+        }
     }
     
     &__list{
@@ -41,22 +45,34 @@
             font-size: 1.7rem;
             font-weight: bold;
             color: $default-color;
+            transition: all .2s;
+
+            &:hover{
+                color: $color-primary;
+            }
         }
 
         @include respond (tab) {
             display: none;
         }
+
+
     }
 
     &__menu{
         &--button{
             background-color: transparent;
             border: none;
+            cursor: pointer;
         }
 
         &--icon{
             height: 3rem;
             width: 3rem;
+            transition: all .2s;
+            &:hover{
+                fill: $color-primary;
+            }
         }
     }
 

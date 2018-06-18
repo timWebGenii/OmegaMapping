@@ -81,7 +81,7 @@
             font-size: $default-font-size;
             font-weight: bold;
             color: $default-color;
-
+            transition: all .2s;
             &:hover{
                 color: $color-primary;
             }

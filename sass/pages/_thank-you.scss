@@ -1,0 +1,70 @@
+.section-thank-you{
+    // background-color: $color-white;
+    // box-shadow: $box-shadow;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    padding: 3rem;
+    & > *:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    & .heading-primary {
+        font-size: 5rem;
+
+        @include respond (tab) {
+            font-size: 4rem;
+        }
+
+        @include respond (phone-switch) {
+            font-size: 3rem;
+        }
+    }
+
+    & .paragraph {
+        text-align: center;
+    }
+}
+
+.thank-you{
+
+    &__logo-box{
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    &__icon{
+        fill: $color-primary;
+        height: 5rem;
+        width: 5rem;
+
+        @include respond (sm-phone){
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    &__contact-row{
+        width: 50%;
+        margin: 0 auto;
+        @include respond (tab){
+            width: 100%;
+            
+        }
+        & .contact__list{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+
+            @include respond (tab){
+                flex-flow: column;
+                align-items: center;
+            }
+        }
+
+    
+        
+    }
+}
