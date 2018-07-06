@@ -25,6 +25,7 @@
         flex: 0 1 45%;
         @include respond (tab) {
            margin-bottom: 5rem;
+           text-align: center;
         }
         & > *:not(:last-child){
             margin-bottom: 1rem;
@@ -44,9 +45,8 @@
             display: flex;
             justify-content: space-around;
          }
-         @include respond (lg-phone){
+         @include respond (phone){
            flex-flow: column;
-           
         }
     }
     &__item{
@@ -64,7 +64,7 @@
         &:visited{
             text-decoration: none;
             color: $default-color;
-
+            text-align: left;
             &:hover{
                 color: $color-primary;
             }
@@ -98,6 +98,9 @@
                font-size: 3rem;
                padding: 3rem;
                }
+         }
+         &-special{
+             display: none;
          }
     }
     &__label{

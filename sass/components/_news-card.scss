@@ -1,7 +1,10 @@
 .news {
     &__card{
         box-shadow: 0 20px 40px rgba(#2699FB, .2);
-        
+        background-color: $color-white;
+        & .section-border{
+            margin: 0;
+        }
     }
     &__top-news-bottom-row{
         display: flex;
@@ -24,4 +27,5 @@
             align-self: flex-end;
         }
     }
+    
 }

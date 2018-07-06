@@ -1,0 +1,35 @@
+
+.section-img-carousel{
+    @include sectionMarginBottom;
+    
+    & .paragraph{
+     text-align: center;
+
+    }
+}
+.section-history{
+    text-align: center;
+    @include sectionMarginBottom;
+    & .heading-primary--main{
+       margin-bottom: 5rem;
+
+    }
+ & amp-list{
+     height: 70rem;
+
+     @media only screen and (max-width: 83.5em){
+        height: 130rem;
+     }
+     @media only screen and (max-width: 45em){
+         height: 195rem;
+     }
+ }
+    & .news__card{
+        display: inline-block;
+        width: 40rem;
+        margin: 2rem;
+        & .section-border{
+            margin: 0;
+        }
+    }
+}

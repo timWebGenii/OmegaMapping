@@ -1,20 +1,20 @@
 .ground-figure{
     text-align: center;
-    flex: 0 1 20%;
-    margin-right: 2rem;
+  
 
     @include respond (phone-switch) {
         margin-right: 0;
     }
     &__container{
-        flex: 0 1 70%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-       
+        justify-content: space-around;
+       margin: auto 10rem;
+       @include respond (tab-port) {
+           margin: auto;
+       }
         @include respond (tab){
             flex: 0 1 100%;
-            order: 1;
         }
 
         @include respond (phone-switch) {
@@ -26,12 +26,12 @@
     }
     @include respond (tab-port) {
         flex: 0 1 35%;
-        margin-bottom: 4rem;
-       
+       margin-bottom: 5rem;
     }
     
     &__img{
         box-shadow: $box-shadow;
+        background-color: $color-white;
         
     }
     &__caption {

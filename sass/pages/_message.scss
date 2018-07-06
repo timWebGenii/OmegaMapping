@@ -1,18 +1,38 @@
-.section-thank-you{
-    // background-color: $color-white;
-    // box-shadow: $box-shadow;
+.section-message{
+  
     text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75vw;
-    padding: 3rem;
+  
+    
     & > *:not(:last-child){
         margin-bottom: 3rem;
+        @include respond (phone-ht) {
+        margin-bottom: 1.5rem;
+        }
     }
+    .hexagon-error{
+        width: 35rem;
+    height: 35rem;
+        
+    & .error-number{
+        font-size: 15rem;
+        @include respond (phone-ht) {
+        font-size: 12rem;
+            }
+    }
+
+    @include respond (phone-ht) {
+        width: 25rem;
+        height: 25rem;
+        margin: 0 auto;
+    }
+    }
+
     & .heading-primary {
-        font-size: 5rem;
+        font-size: 4rem;
 
         @include respond (tab) {
             font-size: 4rem;
@@ -28,11 +48,15 @@
     }
 }
 
-.thank-you{
+.message{
 
     &__logo-box{
-        width: 50vw;
+        width: 45rem;
         margin: 0 auto;
+
+        @include respond (phone-switch) {
+            width: 90vw;
+        }
     }
 
     &__icon{
@@ -47,7 +71,7 @@
     }
 
     &__contact-row{
-        width: 50%;
+        width: 75%;
         margin: 0 auto;
         @include respond (tab){
             width: 100%;

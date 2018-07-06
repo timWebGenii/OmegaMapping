@@ -2,8 +2,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0 10rem;
     margin: 5rem auto;
+    & > .heading-primary--main{
+        flex: 100%;
+        border: none;
+        margin-bottom: 5rem;
+    }
     & .news__card{
         flex: 0 1 30%;
 
@@ -14,6 +18,10 @@
         }
         @include respond (phone-switch) {
             flex: 0 1 100%;
+        }
+
+        & .section-border{
+            // margin: 0;
         }
        
     }

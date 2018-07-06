@@ -10,7 +10,7 @@
    
 
     &-content{
-        padding: 2rem 5rem;
+        padding: 3rem 0;
             display: flex;
             flex-flow: column;
 
@@ -22,18 +22,27 @@
             }
     }
     &-home{
-
+        margin-bottom: 10rem;
+        @include respond (tab-port) {
+            margin-bottom: 35rem;
+        }
+        @include respond (tab-small) {
+            margin-bottom: 30rem;
+        }
+        @include respond (phone-switch) {
+            margin-bottom: 0rem;
+        }
         .header-content {
             
             @include respond (phone-switch) {
-                height: 65vh;
+                height: 65rem;
             }
+           
             @include respond (lg-phone) {
-                height: 55vh;
-                padding: 2rem;
+                height: 57rem;
             }
             @include respond (sm-phone) {
-                height: 43vh;
+                height: 46rem;
             }
             @include respond (phone-ht) {
                 height: 65vh;
@@ -66,7 +75,7 @@
     
 
     &-cemeteries {
-        margin-bottom: 22rem;
+        margin-bottom: 10rem;
 
 
         @include respond (tab-land) {
@@ -89,7 +98,7 @@
            
             &__video-box{
                 flex: 1 0 40%;
-
+                box-shadow: $box-shadow;
                 @include respond (tab) {
                     width: 90vw;
                     order: 1;
@@ -206,7 +215,6 @@
             }
             & .section-contact-buttons{
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-around;
                 text-align: center;
             }
@@ -222,6 +230,20 @@
                 box-shadow: 0 20px 40px rgba(#2699FB, .2);
                 cursor: pointer;
                 transition: all .2s;
+                @include respond (tab){
+                    height: 20rem;
+                    width: 20rem;
+                }
+                @include respond (phone) {
+                    height: 15rem;
+                    width: 15rem;
+                    font-size: 2rem;
+                }
+                @include respond (sm-phone){
+                    height: 10rem;
+                    width: 10rem;
+                    font-size: $default-font-size;
+                }
                &:not(:last-child){
                    margin-bottom: 1rem;
                }
@@ -253,7 +275,7 @@
                     @include respond (tab-land){
                        width: 60vw;
                         text-align: center;
-
+                        margin-right: 0rem;
                        & .paragraph{
                            text-align: center;
                        }
@@ -278,17 +300,87 @@
                    
                 }
                 }
+                & .section-border{
+                    margin: 1rem auto;
+                }
+            }
+        }
+        &-about{
+            @include respond (tab){
+                margin-bottom: 0;
+            }
+            & .header-content{
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem 0;
+
                 
+            }
+            & .header{
+               
+                &-img-box{
+                    flex: 0 1 47%;
+                    align-self: flex-end;
+                    margin-bottom: 0;
+
+                    @include respond (tab){
+                        display: none;
+                    }
+                }
+                &-img{
+                    opacity: .1;
+                }
+                &-content-right{
+                    flex: 0 1 49%;
+                    & >*:not(:last-child){
+                        margin-bottom: 3rem;
+                    }
+                    @include respond (tab){
+                        flex: 0 1 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &-cemetarians{
+            text-align:center;
+            & .header-content{
+                & .heading-primary--main{
+                    text-transform: uppercase;
+                }
+                & .definition{
+                    align-self: center;
+                    width: 60vw;
+                    text-align: left;
+                    @include respond (tab){
+                        width: 75vw;
+                    }
+                   & .paragraph{
+                       display: block;
+                       padding-left: 3rem;
+
+                    
+                   }
+                    
+                }
+                & .header__img-box{
+                    width: 60rem;
+                    margin: 0 auto;
+
+                    @include respond(tab){
+                        width: 75vw;
+                    }
+                }
             }
         }
 }
 .header-bottom-text{
-    width: 65vw;
-    margin: 0 auto;
-    box-shadow: 0 3px 6px $color-black;
- 
-    @include respond (tab-small) {
-        width: 90vw;
+    margin: 5rem; 
+    box-shadow: $box-shadow;
+
+    @include respond (tab-small){
+        margin: 1rem;
     }
- 
  }

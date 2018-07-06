@@ -1,0 +1,24 @@
+.rv-background-box{
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+        width: 100vw;
+        height: 87rem;
+
+        @include respond (tab-port) {
+            height: 119rem;
+        }
+        @include respond (tab) {
+            height: 110rem;
+        }
+        @include respond (phone-switch) {
+            height: 100rem;
+        }
+
+}
+.rv-background{
+    width: 100%;
+    height: 100%;
+}

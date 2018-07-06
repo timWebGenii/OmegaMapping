@@ -9,7 +9,7 @@ body {
 .heading-primary{
 
       &--main{
-            font-size: 5rem;
+            font-size: 4.5rem;
             font-weight: bold;
 
             @include respond(tab-small) {
@@ -18,7 +18,7 @@ body {
       }
 
       &--sub {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 400;
 
             text-transform: capitalize;
@@ -36,9 +36,7 @@ body {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 1rem;
-      @include respond (tab) {
-            font-size: 2rem;
-      }
+     
       border-bottom: 1px solid $color-primary;
 }
 

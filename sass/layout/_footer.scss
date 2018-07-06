@@ -1,28 +1,40 @@
 .footer{
     background-color: $color-white;
+    position: relative;
     &--top{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 5rem;
+        padding: 10rem;
 
         @include respond (tab) {
-            padding: 3rem;
+            padding: 5rem;
         }
      
-        
+        @include respond (phone-switch){
+            flex-flow: column;
+            align-items: flex-start;
+        }
     }
     &--copy{
         background-color: $color-primary;
         color: $color-white;
         padding:2rem 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include respond (phone) {
-            flex-wrap: wrap;
-            justify-content: center;
+        &-container{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include respond (tab) {
+                flex-flow: column;
+                justify-content: center;
+
+                & .footer__copy-box{
+                    order: 1;
+                    margin-top: 1rem;
+                }
+            }
         }
 
     }
@@ -37,14 +49,10 @@
         }
         @include respond (phone-switch) {
            order: 1;
+           align-self: center;
          }
     }
-    &__top-page-btn{
-        @include respond (tab) {
-            display: none;
-        }
-        
-    }
+   
     &__nav{
         flex: 0 1 50%;
         display: flex;
@@ -88,9 +96,31 @@
         }
     }
     &__icon{
-        height:3rem;
-     width: 3rem;
-     fill: $color-primary;
+        height:1.5rem;
+     width: 1.5rem;
+     margin-left: 10px;
+     fill: $color-white;
+
+     
+    }
+
+    .top-page-btn{
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        background-color: $color-primary;
+        padding: 1rem;
+        
+        &:link,
+        &:visited{
+            text-decoration: none;
+        }
+
+        & span{
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: $default-font-size;
+        }
     }
 
     &__copy-box{
@@ -116,8 +146,7 @@
             margin-right: 3rem;
         }
     }
-    height: 2rem;
-    width: 2rem;
     fill: $color-white;
-    
+        height:3rem;
+        width: 3rem;
 }

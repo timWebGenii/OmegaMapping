@@ -26,11 +26,16 @@ html {
 body {
       box-sizing: border-box;
       background-color: $color-light-grey;
-       
-
-      
 }
-
+section{
+      @include sectionMarginBottom;
+}
+.container{
+      max-width: 150rem;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+}
 ::selection {
       background-color: $color-primary;
       color: $color-white;

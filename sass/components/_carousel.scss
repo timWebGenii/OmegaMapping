@@ -1,0 +1,11 @@
+.carousel {
+    max-width: 200rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    & .amp-carousel-button{
+        background-color: $color-primary;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+    } 
+}

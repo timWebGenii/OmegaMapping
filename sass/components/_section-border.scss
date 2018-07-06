@@ -1,7 +1,8 @@
 .section-border{
     display: flex;
     align-items: center;
-  
+    margin: 5rem auto 10rem auto;
+
 
     &__line{
         border-bottom: 1px solid $border-color;
@@ -13,33 +14,5 @@
         padding: 0rem 5rem;
     }
 
-    &--vert{
-        flex-flow: column;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include respond (tab-port) {
-        padding-top: 4rem;
-            
-        }
-      
-
-            @include respond (tab) {
-                display: none;
-            }
-        &__line{
-            border-right: 1px solid $border-color;
-            height: 55rem;
-
-
-            @include respond (tab-port) {
-               height: 45rem;
-            }
-            
-        }
-        &__icon {
-            padding: 5rem 0;
-        }
-    }
+    
 }

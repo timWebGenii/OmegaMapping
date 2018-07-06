@@ -4,3 +4,70 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin sectionMarginBottom{
+    margin-bottom: 15rem;
+    @include respond(tab){
+        margin-bottom: 5rem;
+    }
+}
+
+$ipad-pro-portrait-breakpoint: "(min-device-width : 64em) and (max-device-width : 64em) and (min-device-height : 85.375em) and (max-device-height : 85.375em) and (min-width: 64em) and (max-width: 64em)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-ht {
+        @media only screen and (max-height: 40em) {@content };
+    }
+
+    
+    @if $breakpoint == sm-phone {
+          @media only screen and (max-width: 20em) {@content };
+    }
+    @if $breakpoint == mid-phone {
+      @media only screen and (max-width: 23.4375em) {@content };
+}
+@if $breakpoint == phone {
+      @media only screen and (max-width: 26.125em) {@content };
+}
+@if $breakpoint == lg-phone {
+      @media only screen and (max-width: 28.125em) {@content }; //425px
+}
+@if $breakpoint == phone-switch {
+      @media only screen and (max-width: 33.125em) {@content }; 
+}
+  @if $breakpoint == tab-small {
+        @media only screen and(max-width: 37.5em) {@content };  //600px
+  }
+
+  @if $breakpoint == tab { 
+        @media only screen and(max-width: 43.75em) {@content};
+  }
+  
+
+  @if $breakpoint == tab-port {
+        @media only screen and(max-width: 56.25em) { @content }; //900px
+  }
+
+  @if $breakpoint == tab-mid {
+        @media only screen and(max-width: 63.375em) {@content }; //978px for .popup
+  }
+
+  @if $breakpoint == tab-ipad-pro-portrait {
+        @media only screen and(min-device-width : 64em) and (max-device-width : 64em) and (min-device-height : 85.375em) and (max-device-height : 85.375em) and (min-width: 64em) and (max-width: 64em) {@content };
+  }
+  @if $breakpoint == tab-ipad-portrait {
+        @media only screen and (min-device-width: 48em) and (max-device-width: 48em) and (min-device-height: 64em) and (max-device-height: 64em) and (min-width: 48em) and (max-width: 48) {@content };
+  }
+  @if $breakpoint == tab-lg {
+    @media only screen and(max-width: 65.625em) { @content }; //1050px
+}
+
+  @if $breakpoint == tab-land {
+        @media only screen and(max-width: 75em) { @content }; //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }; //1800px
+  }
+}

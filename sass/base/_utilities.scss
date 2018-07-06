@@ -1,7 +1,14 @@
 .u-card{
     background-color: $color-white;
     padding: 2rem;
+    box-shadow: $box-shadow;
 }
 .u-text-center{
     text-align: center;
+}
+.u-margin-top{
+    margin-top: 5rem;
+}
+.u-margin-bottom{
+    margin-bottom: 15rem;
 }

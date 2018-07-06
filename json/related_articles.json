@@ -1,0 +1,30 @@
+{
+    "items": [{
+            "title": "News Article 1",
+            "summary": "Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it. Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it.",
+            "featuredImg": "img/Len-Mapping.jpg",
+            "postedDate": "6/15/2018",
+            "author": "Website Genii",
+            "category": "In the News",
+            "url": "#"
+        },
+        {
+            "title": "News Article 2",
+            "summary": "Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it. Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it.",
+            "featuredImg": "img/Len-Mapping.jpg",
+            "postedDate": "6/15/2018",
+            "author": "Website Genii",
+            "category": "In the News",
+            "url": "#"
+        },
+        {
+            "title": "News Article 3",
+            "summary": "Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it. Omega Mapping did an amazing thing in this amazing place and this is the news article preview about it.",
+            "featuredImg": "img/Len-Mapping.jpg",
+            "postedDate": "6/15/2018",
+            "author": "Website Genii",
+            "category": "In the News",
+            "url": "#"
+        }
+    ]
+}

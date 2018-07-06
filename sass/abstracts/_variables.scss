@@ -11,11 +11,11 @@ $border-color: #707070;
 $default-color: #0D0C0C;
 $default-font-size: 1.6rem;
 
-$box-shadow: 0 3px 6px $color-black;
+$box-shadow: 0 3px 15px rgba($color-black, 0.5);
 
 
 $ipad-pro-portrait-breakpoint: "(min-device-width : 64em) and (max-device-width : 64em) and (min-device-height : 85.375em) and (max-device-height : 85.375em) and (min-width: 64em) and (max-width: 64em)";
-// $ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1366px) and (max-width: 1366px)";
 
 @mixin respond($breakpoint) {
     @if $breakpoint == phone-ht {
@@ -55,10 +55,12 @@ $ipad-pro-portrait-breakpoint: "(min-device-width : 64em) and (max-device-width 
         @media only screen and(max-width: 63.375em) {@content }; //978px for .popup
   }
 
-  @if $breakpoint == tab-ipad-portrait {
+  @if $breakpoint == tab-ipad-pro-portrait {
         @media only screen and(min-device-width : 64em) and (max-device-width : 64em) and (min-device-height : 85.375em) and (max-device-height : 85.375em) and (min-width: 64em) and (max-width: 64em) {@content };
   }
-
+  @if $breakpoint == tab-ipad-portrait {
+        @media only screen and (min-device-width: 48em) and (max-device-width: 48em) and (min-device-height: 64em) and (max-device-height: 64em) and (min-width: 48em) and (max-width: 48) {@content };
+  }
   @if $breakpoint == tab-lg {
     @media only screen and(max-width: 65.625em) { @content }; //1050px
 }

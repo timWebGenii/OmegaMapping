@@ -1,89 +1,75 @@
 .home-background {
     opacity: .1;
-
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-
-    @include respond (tab-land) {
-        width: 60vw;
+    &-box {
+        position: absolute;
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 90rem;
+        @include respond (tab-port) {
+            top: 20rem;
+        }
+        @include respond (tab-ipad-portrait) {
+            width: 70vw;
+            top: 20rem;
+        }
+        @include respond (tab) {
+            width: 90vw;
+            top: 18rem;
+        }
     }
-    @include respond (tab) {
-        width: 70vw;
-        top: 20rem;
-    }
-   
 }
 
 .section-ground-figures {
-    padding: 3rem 5rem;
+  @include sectionMarginBottom;
+}
+
+.section-cemeteries {
+    @include sectionMarginBottom;
+}
+
+.section-municipalities {
+    @include sectionMarginBottom;
+ 
+   
+}
+
+.section-franchise-opp {
+    padding: 3rem 10rem;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 10rem;
-
-    @include respond (tab) {
-        margin-top: -22rem;
-        padding: 2rem 5rem;
-    }
-
-    @include respond (tab-small){
-        margin-top: -25rem;
-        margin-bottom: 0rem;
-    }
-
-    @include respond (sm-phone) {
-        margin-top: -36rem;
-    }
-
-    @include respond (phone-switch) {
-       padding: 3rem;
-     }
-
-    &__text-box{
-        flex: 0 1 30%;
-        align-self: center;
-            @include respond (tab){
-                flex: 0 1 80%;
-                margin-bottom: 10rem;
-            }
-            @include respond (phone-switch) {
-                flex: 0 1 100%;
-             }
-             @include respond (phone-ht){
-                margin-bottom: 5rem;
-            }
-    }
-}
-
-.section-cemeteries{
-  
-}
-
-.section-municipalities{
-  
-}
-
-.section-franchise-opp{
-    padding: 5rem;
-    margin: 0 5rem;
-    display: flex;    
     justify-content: space-around;
     align-items: center;
-
     @include respond (tab) {
         padding: 3rem 5rem;
     }
-
-    @include respond (tab-small) {
-        flex-flow: column;
-        padding: 3rem;
+    & .figure-contentBottom__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem;
+        @include respond (tab-lg) {
+            flex-flow: column;
+        }
+        & .hexagon {
+            width: 15rem;
+            height: 15rem;
+            & .heading-secondary {
+                font-size: 2rem;
+            }
+            &-row:not(:last-of-type) {
+                margin-bottom: -3rem;
+            }
+            @include respond (sm-phone) {
+                width: 11rem;
+                height: 11rem;
+                & .heading-secondary {
+                    font-size: 1.5rem;
+                }
+                &-row:not(:last-of-type) {
+                    margin-bottom: -2rem;
+                }
+            }
+        }
     }
-    @include respond (lg-phone) {
-        padding: 1rem;
-    }
-
-    
 }

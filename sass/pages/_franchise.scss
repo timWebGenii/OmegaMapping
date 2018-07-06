@@ -5,10 +5,10 @@
     z-index: -1;
 
         width: 100vw;
-        height: 80rem;
+        height: 87rem;
 
         @include respond (tab-port) {
-            height: 120rem;
+            height: 119rem;
         }
         @include respond (tab) {
             height: 110rem;
@@ -23,5 +23,16 @@
     height: 100%;
 }
 .section-training{
-    margin-top: 5rem;
+    & .heading-primary--main{
+        margin-bottom: 10rem;
+    }
+}
+
+.section-ongoing-support,
+.section-digital{
+    & .figure-contentBottom__bottom-text{
+        background-color: transparent;
+        box-shadow: none;
+       
+    }
 }

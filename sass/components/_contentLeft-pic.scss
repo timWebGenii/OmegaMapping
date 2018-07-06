@@ -1,52 +1,65 @@
 .contentLeft-pic{
 
-    padding: 3rem 8rem;
+
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @include respond (tab){
         flex-flow: column;
         padding: 3rem;
     }
-    &__img-box,
-    &__container--left{
-        flex: 0 1 47%;
-    }
+   
+  
 
     &__container--left{
+        flex: 0 1 50%;
 
+        position: relative;
+        z-index: 20;
+        margin-right: -5%;
+ background-color: $color-white;
+        padding: 2rem;
         display: flex;
         flex-flow: column;
+        box-shadow: $box-shadow;
+        align-self: center;
+
         @include respond (tab) {
             width: 100%;
             text-align: center;
+            order: 1;
+            margin-right: 0;
         }
-       
+       & .heading-secondary{
+           margin-bottom: 0;
+       }
 
         & .btn{
-            margin-top: 5rem;
+            margin-top: 1rem;
             align-self: flex-start;
             @include respond (tab) {
                align-self: center;
-                margin-bottom: 5rem;
             }
         }
     }
+    &__text-box{
+        
+    }
     &__img-box{
-        text-align: right;
+        flex: 0 1 50%;
         @include respond (tab){
             width: 75%;
-             margin-bottom: 3rem;
-             text-align: center;
+             margin-bottom: 4rem;
+             
          }
          @include respond (phone-switch) {
              width: 90%;
          }
     }
     &__img{
-        box-shadow: 0 3px 6px $color-black;
-       
+        box-shadow: $box-shadow;
     }
 
 }

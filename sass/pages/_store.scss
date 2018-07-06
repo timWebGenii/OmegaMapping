@@ -1,21 +1,45 @@
 .section-store{
-  
     display: flex;
-
+    justify-content: center;
+    margin-bottom: 0;
+    @include respond (tab){
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 .store{
+    &__model-box{
+        align-self: flex-end;
+        @include respond (tab){
+           display: none;
+        }
+    }
     &__container--right{
         display: flex;
         flex-flow: column;
+        margin-right: 5rem;
+        @include respond (tab){
+            align-items: center;
+            margin-right: 0;
+        }
         
     }
     &__text-box{
         margin-top: 5rem;
+        @include respond (tab) {
+            width: 75vw;
+            
+        }
     }
     &__merchandise{
         margin-top: auto;
         display: flex;
         margin-bottom: 5rem;
+        @include respond (tab) {
+            flex-flow: column;
+            margin-top: 5rem;
+        }
     }
     &__item {
         list-style: none;
@@ -24,17 +48,62 @@
         &:not(:last-child){
             margin-right: 2rem;
         }
+
+        @include respond (tab) {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+            width: 75vw;
+
+         }
+         @include respond (phone) {
+             flex-flow: column;
+         }
+      
+        &--pic-box{
+            @include respond (tab){
+                width: 30rem;
+                margin-right: 5rem;
+            }
+            @include respond (phone) {
+                margin-right: 0;
+               
+            }
+        }
         &--img{
            box-shadow: $box-shadow; 
+            align-items: center;
+           
+        }
+        &--text-box{
         }
         &--title{
             border: none;
+            @include respond (tab-lg){
+                font-size: 2rem;
+            }
+            @media only screen and(max-width: 47em){
+                font-size: 1.8rem;
+            }
+            @include respond (tab){
+                font-size: 2.5rem;
+            }
         }
-
+   
         &--price{
             color: $color-primary;
             text-align: center;
             font-size: 2.5rem;
+
+            
         }
+        &--buy-btn{
+            @include respond (tab){
+                flex: 0 1 100%;
+               
+            }
+        }
+       
     }
 }

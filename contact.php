@@ -11,11 +11,22 @@
 	$email = "";
 	$message = "";
 	$number = "";
+	$address = "";
 	
 	$name =  trim($_REQUEST['name']);
 	$email =  trim($_REQUEST['email']);
 	$message =  trim($_REQUEST['message']);
 	$number = trim($_REQUEST['number']);
+	$address = trim($_REQUEST['address']);
+	$wd416 = trim($_REQUEST['wd416']);
+	$qb1226= trim($_REQUEST['qb1226']);
+
+	
+	// variables end
+	if($wd416 != "" && $qb1226 != "253"){
+		header('Status: 400', TRUE, 400);
+		echo json_encode(array('message'=>'This is error message'));
+	}
 	// variables end
 	
 	// email address starts
@@ -23,7 +34,12 @@
 	// email address ends
 	
 	$subject = "Message From: $name";	
-	$message = "<strong>From:</strong> $name <br/><br/> <strong>Phone Number:</strong> $number <br/><br/> <strong>Message:</strong> $message";
+	
+	if($address != ''){
+	$message = "<strong>From:</strong> $name <br/><br/> <strong>Phone Number:</strong> $number <br/><br/> <strong>Address:</strong> $address <br/><br/><strong>Message:</strong> $message";
+	} else {
+		$message = "<strong>From:</strong> $name <br/><br/> <strong>Phone Number:</strong> $number <br/><br/> <strong>Message:</strong> $message";
+	}
 	
 	$headers = '';
 	$headers .= 'From: '. $name . '<' . $email . '>' . "\r\n";

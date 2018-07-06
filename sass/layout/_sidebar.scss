@@ -1,12 +1,9 @@
 .sidebar{
     position: relative;
-    width: 40vw;
+    width: 20vw;
     text-align: right;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
 
+    // backface-visibility: hidden;
     @include respond (tab) {
         width: 50vw;
     }
@@ -19,9 +16,10 @@
     &__close{
         background-color: transparent;
         border:none;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        align-self: flex-start;
+
     }
 
     &__icon{
@@ -31,7 +29,7 @@
     }
 
     &__nav {
-       margin-top: 1rem;
+    width: 100%;
     }
 
     &__item {
@@ -39,15 +37,14 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        &:not(:last-child) {
-            margin-bottom: 3rem;
-      }
+        padding-right: 2rem;
     }
     &__link {
             
         &:link,
         &:visited,
          {
+              padding: 1.5rem 0;
             font-size: 2rem;
             font-weight: bold;
             text-transform: uppercase;
@@ -55,15 +52,21 @@
             position: relative;
             color: $default-color;
             z-index: 10;
-            height: 4rem;
-            margin-right: 2rem;
-
-
+            transition: all .4s;
+            width: 100%;
+            &:hover{
+                background-color: $default-color;
+                border-right: 10px solid $color-primary;
+                color: $color-light-grey;
+                padding-right: 1rem;
+            }
             
         }
-
-        
-
+    }
+    &__logo-box{
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
     
 }

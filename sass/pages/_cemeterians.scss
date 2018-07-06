@@ -1,0 +1,21 @@
+.section-hexagons{
+    @include sectionMarginBottom;
+    & .hexagon-row {
+        justify-content:space-around;
+       & .heading-secondary{
+           
+           font-size: 2rem;
+       }
+       @include respond (phone-switch) {
+           flex-flow: column;
+           align-items: center;
+
+           & .hexagon{
+               width: 20rem;
+               height: 20rem;
+               margin-bottom: 4rem;
+           }
+       }
+
+    }
+}
