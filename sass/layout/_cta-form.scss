@@ -51,7 +51,7 @@
     }
     &__item{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         &:not(:last-child){
             margin-bottom: 1rem;
@@ -102,6 +102,16 @@
          &-special{
              display: none;
          }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone-switch){
+            flex-flow: column;
+            align-items: flex-start;
+        }
     }
     &__label{
         background-color: $color-black;

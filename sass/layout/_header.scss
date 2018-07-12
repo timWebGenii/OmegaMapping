@@ -183,7 +183,25 @@
                 flex-flow: row;
                 justify-content: space-between;
                 align-items: center;
-
+                & .hexagon{
+                    margin-right: 1rem;
+                    @include respond (phone-switch) {
+                        width: 15rem;
+                        height: 15rem;
+                        margin-right: -1rem;
+                    }
+                    @include respond (sm-phone) {
+                        width: 13rem;
+                        height: 13rem;
+                    }
+                    & text{
+                        font-size: 2.5rem;
+                        @media only screen and (min-width: 1800px) {
+                            font-size: 2rem;
+                        };
+                    }
+                   
+                }
                 @include respond (tab-port){
                     flex-flow: column;
 
@@ -219,15 +237,8 @@
                 text-align: center;
             }
             & .contact__buttons{
-                background-color: $color-white;
-                height: 30rem;
-                width: 30rem;
-               font-size: 3rem;
-               color: $color-primary;
-               outline: none;
-                text-align: center;
-                border: 3px solid $color-primary;
-                box-shadow: 0 20px 40px rgba(#2699FB, .2);
+                border:none;
+                background: none;
                 cursor: pointer;
                 transition: all .2s;
                 @include respond (tab){
@@ -247,12 +258,7 @@
                &:not(:last-child){
                    margin-bottom: 1rem;
                }
-               &:hover{
-                   background-color: $color-primary;
-                   color: $color-white;
-        text-shadow: 0 3px 5px $color-black;
-
-               }
+              
             }
         }
         &-news{
@@ -346,6 +352,9 @@
         }
         &-cemetarians{
             text-align:center;
+            @include respond (tab){
+                margin-bottom: 0rem;
+            }
             & .header-content{
                 & .heading-primary--main{
                     text-transform: uppercase;

@@ -1,8 +1,6 @@
 .navigation{
     padding-top: 1rem;
-    &__checkbox{
-        display: none
-    }
+   
     &__nav{
         display: flex;
         align-items: center;
@@ -65,13 +63,21 @@
             border: none;
             cursor: pointer;
         }
-
+       
         &--icon{
             height: 3rem;
             width: 3rem;
             transition: all .2s;
             &:hover{
                 fill: $color-primary;
+            }
+        }
+        @include respond (tab) {
+            margin-right: 2rem;
+            padding-top: 2rem;
+            &--icon{
+                height: 5rem;
+                width: 5rem;
             }
         }
     }

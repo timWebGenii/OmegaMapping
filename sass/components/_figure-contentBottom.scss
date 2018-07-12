@@ -7,7 +7,7 @@
     }
     &__img {
         width: 100vw;
-        max-width: 200rem;
+        height: calc(100vw/3);
         box-shadow: $box-shadow;
         @include respond (tab) {
             width: 100vw;
@@ -15,7 +15,10 @@
     }
     & .btn{
     align-self: center;
+    
      }
+
+     
     &__caption {
         font-size: 3rem;
         text-transform: capitalize;

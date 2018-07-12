@@ -1,93 +1,72 @@
 
 .hexagon {
-    
-
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      
-  }
-    background-color: $color-primary;
-    color: $color-white;
-    text-shadow: 0 3px 5px $color-black;
-    width: 20rem;
-    height: 20rem;
-    position: relative;
     transition: all .2s;
     backface-visibility: hidden;
     cursor: pointer;
-
+    filter: drop-shadow(0 .4rem .4rem rgba($color-black, 0.5));
+    &:hover {
+        filter: drop-shadow(0 1rem 1rem rgba($color-black, 0.5));
+      
+            transform: scale(1.1);
+       
+    
+    }
     @include respond (phone-switch) {
-        width: 14rem;
-        height: 14rem
+        width: 15rem;
+        height: 15rem;
     }
     @include respond (sm-phone) {
-        width: 11rem;
-        height: 11rem
+        width: 13rem;
+        height: 13rem;
     }
-    & .heading-secondary{
-        font-size: 2.5rem;
-            text-decoration: none;
-            color: $color-white;
-            text-align: center;
-            border: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            @include respond (phone-switch){
-                font-size: 1.8rem;
-            }
-            @include respond (sm-phone) {
-                font-size: 1.5rem;
-            }
+    
+    & text{
+            font-size: $default-font-size;
+            fill: $color-white;
+           text-transform: uppercase;
+            text-shadow: 0 3px 5px $color-black;
+           filter: drop-shadow(0 3px 5px $color-black);
     }
     
     &-row {
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+   
           
         &:not(:last-of-type) {
-            margin-bottom: -4rem;
+            margin-bottom: -5rem;
+            @media only screen and (min-width: 1800px) {
+               margin-bottom: -4rem;
+            };
             @include respond (phone-switch) {
-                margin-bottom: -2rem;
+                margin-bottom: -4rem;
 
             }
+            @include respond (sm-phone) {
+                margin-bottom: -3rem;
+            }
         }
-      }
-    }
-    &-center {
-        background-color: $color-white;
-        text-shadow: none;
-        & .heading-secondary{
-
-            color: $color-primary;
-        }
-   
       
     }
+  
     &-caption {
-        width: 11rem;
-        height: 11rem;
-        background-color: $color-white;
-        text-shadow: none;
-        margin-top: -5rem;
         
-        & .heading-secondary{
-            color: $color-primary;
+        
+        margin-top: -8rem;
+        margin-left: 1rem;
 
-            font-size: 1.4rem;
-            @include respond (phone) {
-                font-size: 1.2rem;;
-            }
+        @include respond (tab-land) {
+            transform: scale(.7);
+            margin-left: -2rem;
+        }
 
+        & text{
+            @media only screen and (min-width: 1800px) {
+                font-size: $default-font-size;
+            };
         }
        
-        @include respond (phone) {
-            width: 9rem;
-            height: 9rem;
-        }
     }
     &-title{
         background-color: $color-primary;
@@ -110,20 +89,11 @@
    
    
     &-shadow {
-        filter: drop-shadow(0 .4rem .4rem rgba($color-black, 0.5));
+        text-shadow: 0 3px 5px $color-black;
         backface-visibility: hidden;
-        &:not(:last-of-type) {
-            margin-right: 1rem;
-        }
-        &:hover {
-            filter: drop-shadow(0 1rem 1rem rgba($color-black, 0.5));
-            & .hexagon {
-                transform: scale(1.1);
-            }
-            & .hexagon-center {
-                transform: scale(1);
-            }
-        }
+        text-decoration: none;
+       
+       
     }
    
 }

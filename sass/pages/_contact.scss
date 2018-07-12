@@ -17,3 +17,16 @@
 .tabButton[selected]+.tabContent {
     display: flex;
 }
+.section-contact-buttons{
+    margin-bottom: 0;
+    & .hexagon{
+        @include respond (phone-switch){
+            width: 17rem;
+            height: 17rem;
+        }
+        @include respond (sm-phone) {
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+}

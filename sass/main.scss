@@ -8,13 +8,13 @@
 @import 'base/utilities';
 
 @import 'components/button';
-// @import 'components/carousel';
-@import 'components/contentLeft-pic';
-@import 'components/figure-contentBottom';
+@import 'components/carousel';
+// @import 'components/contentLeft-pic';
+// @import 'components/figure-contentBottom';
 // @import 'components/ground-figure';
-@import 'components/hexagon';
-// @import 'components/news-card';
-@import 'components/pic-contentRight';
+// @import 'components/hexagon';
+@import 'components/news-card';
+// @import 'components/pic-contentRight';
 @import 'components/section-border';
 
 @import 'layout/cta-form';
@@ -23,14 +23,14 @@
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
-// @import 'pages/about';
+@import 'pages/about';
 // @import 'pages/cemeterians';
 // @import 'pages/cemeteries';
 // @import 'pages/contact';
-@import 'pages/franchise';
+// @import 'pages/franchise';
 // @import 'pages/index';
 // @import 'pages/message';
 // @import 'pages/municipalities';
-// @import 'pages/news';
-@import 'pages/rv-franch';
+@import 'pages/news';
+// @import 'pages/rv-franch';
 // @import 'pages/store';

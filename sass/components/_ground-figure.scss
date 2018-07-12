@@ -1,7 +1,6 @@
 .ground-figure{
     text-align: center;
-  
-
+    width: 25rem;
     @include respond (phone-switch) {
         margin-right: 0;
     }
@@ -19,7 +18,7 @@
 
         @include respond (phone-switch) {
             flex-flow: column;
-           
+           align-items: center;
         }
 
     
