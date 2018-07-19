@@ -231,11 +231,11 @@
             & .paragraph{
                 text-align: center;
             }
-            & .section-contact-buttons{
-                display: flex;
-                justify-content: space-around;
-                text-align: center;
-            }
+            // & .section-contact-buttons{
+            //     display: flex;
+            //     justify-content: space-around;
+            //     text-align: center;
+            // }
             & .contact__buttons{
                 border:none;
                 background: none;
@@ -312,6 +312,7 @@
             }
         }
         &-about{
+            margin: 5rem auto;
             @include respond (tab){
                 margin-bottom: 0;
             }
@@ -383,6 +384,9 @@
                     }
                 }
             }
+        }
+        &-policy{
+            text-align: left;
         }
 }
 .header-bottom-text{

@@ -1,6 +1,6 @@
 .sidebar{
     position: relative;
-    width: 20vw;
+    width: 30vw;
     text-align: right;
 
     // backface-visibility: hidden;
@@ -65,8 +65,9 @@
     }
     &__logo-box{
         text-align: center;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
+     
+        width: 20rem;
+        margin: 0 auto
     }
     
 }

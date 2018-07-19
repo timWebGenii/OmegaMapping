@@ -19,10 +19,27 @@
 }
 .section-contact-buttons{
     margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+   
     & .hexagon{
+        height: 20rem;
+        width: 20rem;
+        & text{
+            font-size: 2.5rem;
+        }
         @include respond (phone-switch){
             width: 17rem;
             height: 17rem;
+           & text{
+               font-size: 3rem;
+           }
+        }
+        @include respond (phone){
+            width: 15rem;
+            height: 15rem;
+
+            
         }
         @include respond (sm-phone) {
             width: 12rem;

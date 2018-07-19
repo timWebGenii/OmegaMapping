@@ -70,6 +70,10 @@
         margin-top: 1rem;
         text-transform: uppercase;
         font-weight: bold;
+
+        @media only screen and(min-width : 43.75em) and (max-width : 50.625em){
+            text-align: left;
+        }
     }
 
 }
